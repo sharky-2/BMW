@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Boldonse&family=Chewy&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+
+    /* ================================================= */
+    /* Colors */
+    --primary-color: white;
+    --secondary-color: black;
+
+    --gray: #cacaca;
+
+    --light-orange: #ffd386; --dark-orange: #6f532f;
+    --light-blue: #86cfff;  --dark-blue: #3f73a5;
+    --light-pink: #e086ff;  --dark-pink: #7f2a7a;
+    --light-green: #a0ff86; --dark-green: #439f47;
+    --light-red: #ff8686;   --dark-red: #9e3f3f;
+
+    /* ================================================= */
+    /* Fonts */
+    --title-font-boldonse: "Boldonse";
+    --title-font-chewy: "Chewy";
+    --text-font: "Robot";
+
+}
+
+.title-boldonse {font-family: var(--title-font-boldonse);}
+.title-chewy {font-family: var(--title-font-chewy);}
