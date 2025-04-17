@@ -1,34 +1,25 @@
 /* ================================================= */
-/* Card Design */
-#card-frame {
-    height: fit-content;
+/* Menu */
+#menu {
+    position: fixed;
+    width: calc(100% - 50px);
+    height: 50px;
+
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    background-color: var(--gray);
 
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
 }
-#card-frame .l,
-#card-frame .r {
-    width: calc(50% - 30px);
-    
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-direction: column;
-    gap: 30px;
+#menu a {
+    text-decoration: none;
+    cursor: pointer;
 }
-#card-frame .card {
-    border-radius: 35px;
-    width: calc(100% - 60px);
-    padding: 30px;
-}
-#card-frame .card h1 {
-    width: 300px;
-}
-#card-frame .card-l:nth-child(1) {height: 500px; background-color: var(--light-blue);}
-#card-frame .card-l:nth-child(2) {height: 350px; background-color: var(--light-red);}
-#card-frame .card-r:nth-child(1) {height: 600px; background-color: var(--light-orange);}
-#card-frame .card-r:nth-child(2) {height: 250px; background-color: var(--light-pink);}
-#card-frame .card-b {height: 200px; background-color: var(--light-green);}

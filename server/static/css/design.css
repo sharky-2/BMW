@@ -1,7 +1,8 @@
 body {
     padding: 0;
+    padding-inline: 25px;
     margin: 0 auto;
-    width: 1000px;
+    width: 100%;
 
     display: flex;
     justify-content: center;
@@ -10,8 +11,7 @@ body {
 }
 
 section {
-    width: 100%;
-    min-height: 500px;
+    width: 1000px;
 }
 
 h1 {margin: 0; line-height: 45px;}
@@ -20,4 +20,7 @@ h1 {margin: 0; line-height: 45px;}
 .title-d {
     font-size: 2em;
     color: var(--dark-blue);
+}
+.text-d {
+    color: var(--secondary-color);
 }
