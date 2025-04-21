@@ -5,16 +5,15 @@
 
     /* ================================================= */
     /* Colors */
-    --primary-color: white;
-    --secondary-color: black;
+    --primary-bg: #FFFFFF;
+    --secondary-bg: #333331; --gray: #454545;
 
-    --gray: #cacaca;
-
-    --light-orange: #ffd386; --dark-orange: #6f532f;
-    --light-blue: #86cfff;  --dark-blue: #3f73a5;
-    --light-pink: #e086ff;  --dark-pink: #7f2a7a;
-    --light-green: #a0ff86; --dark-green: #439f47;
-    --light-red: #ff8686;   --dark-red: #9e3f3f;
+    --primary-main-color: #186CE6;   
+    --secondary-main-color: #1A9CEE;  
+    --tertiary-main-color: #20A9FF;
+    --primary-blue: #186CE6;    --primary-orange: #E8320B;
+    --secondary-blue: #1A9CEE;  --secondary-orange: #E9512A;
+    --tertiary-blue: #20A9FF;   --tertiary-orange: #E9570E;
 
     /* ================================================= */
     /* Fonts */
