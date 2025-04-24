@@ -1,2 +1,147 @@
 /* ================================================= */
-/* Menu */
+/* Header-section */
+#header-section img {
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+
+    border-radius: 100px;
+    margin-top: 100px;
+}
+#header-section .subtitle-design {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ================================================= */
+/* About */
+#about-section {
+    height: 900px;
+    position: relative;
+}
+#about-section::before {
+    content: "";
+    background: linear-gradient(
+        90deg,
+        var(--primary-bg-color),
+        var(--dark-white),
+        var(--dark-white),
+        var(--dark-white),
+        var(--primary-bg-color)
+    );
+    height: 3px;
+    width: 100%;
+
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+}
+.image-section .image-bg {
+    background-color: var(--primary-bg-color);
+    width: 350px;
+    height: 420px;
+
+    padding: 10PX;
+    box-shadow: 0 0 40px 10px var(--gray);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+.image-section .image-bg:nth-child(1) {
+    position: absolute;
+    left: 150px;
+    bottom: 30%;
+    transform: translateY(40%) rotate(-10deg);
+}
+.image-section .image-bg:nth-child(2) {
+    position: absolute;
+    right: 150px;
+    bottom: 40%;
+    transform: translateY(40%) rotate(15deg);
+}
+.image-section .image-bg img {width: 100%; height: 90%; object-fit: cover;}
+.image-section .image-bg label {width: 100%; height: 10%;}
+
+/* ================================================= */
+/* Experience */
+#experience-section {min-height: fit-content;}
+#experience-section .text-table {
+    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
+}
+#experience-section .text-table label {margin: 0;}
+#experience-section .text-table .line {
+    width: 100%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    gap: 10px;
+
+    position: relative;
+}
+
+/* ================================================= */
+/* Title */
+#title-section {
+    min-height: 70px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* ================================================= */
+/* Projects */
+#projects {
+    background: url("../image/icon/bg-plus.png");
+    background-repeat: repeat;
+    background-size: 60px;
+
+    
+    width: 130%;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    
+}
+#project-section {
+    background-color: var(--primary-bg-color);
+    width: calc(100% - 15%);
+
+    padding: 40px;
+    border: 4px solid var(--dark-white);
+    border-radius: 50px;
+}
+#project-section .image-bg {
+    width: 100%;
+    height: 65%;
+    border-radius: 20px;
+
+    margin-bottom: 20px;
+}
+#project-section .image-bg img {
+    box-shadow: 0 0 40px 10px var(--gray);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#project-section .subtitle-design {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+#project-section .button-section {justify-content: start;}
