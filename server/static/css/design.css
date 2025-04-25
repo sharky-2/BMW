@@ -17,6 +17,8 @@ body {
 
     border-left: 4px solid var(--dark-white);
     border-right: 4px solid var(--dark-white);
+
+    overflow-x: hidden;
 }
 body > div {
     width: 100%;
@@ -151,23 +153,31 @@ button {cursor: pointer;}
 /* Ranks */
 .rank {
     content: "";
-    height: 15px;
-    width: 15px;
+    padding: 10px 20px;
 
     outline: none;
-    border-radius: 100px;
-    
-    position: absolute;
-    left: 0;
-    bottom: 50%;
-    transform: translateY(50%);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+
+    font-weight: bold;
 }
-.rank-good {
-    background-color: var(--green);
+.rank img {width: 30px;}
+.rank-blue {
+    background-color: var(--light-blue);
+    color: var(--dark-blue);
+    border: 1px solid var(--blue);
 }
-.rank-medium {
-    background-color: var(--orange);
+.rank-orange {
+    background-color: var(--light-orange);
+    color: var(--dark-orange);
+    border: 1px solid var(--orange);
 }
-.rank-learning {
-    background-color: var(--blue);
+.rank-gray {
+    background-color: var(--dark-white);
+    color: var(--primary-text-color);
+    border: 1px solid var(--gray);
 }
