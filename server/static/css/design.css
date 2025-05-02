@@ -181,3 +181,47 @@ button {cursor: pointer;}
     color: var(--primary-text-color);
     border: 1px solid var(--gray);
 }
+
+/* ================================================= */
+/* Animations */
+.text-appear {
+    animation: text-appear linear;
+    animation-timeline: view(60% auto);
+}
+.text-appear-2 {
+    animation: text-appear-2 linear;
+    animation-timeline: view(80% auto);
+}
+.text-slide-left {
+    animation: text-slide-left linear;
+    animation-timeline: view(60% auto);
+}
+.text-slide-right {
+    animation: text-slide-right linear;
+    animation-timeline: view(60% auto);
+}
+.autoBlur {
+    animation: text-blue linear;
+    animation-timeline: view();
+}
+@keyframes text-appear {
+    from {transform: translateY(500px) scale(.3); opacity: 0;} 
+    to {transform: translateY(0) scale(1); opacity: 1;}
+}
+@keyframes text-appear-2 {
+    from {transform: translateY(400px); opacity: 0;} 
+    to {transform: translateY(0) ; opacity: 1;}
+}
+@keyframes text-slide-left {
+    from {transform: translateX(100%); opacity: 0;} 
+    to {transform: translateY(0); opacity: 1;}
+}
+@keyframes text-slide-right {
+    from {transform: translateX(-100%); opacity: 0;} 
+    to {transform: translateY(0); opacity: 1;}
+}
+@keyframes text-blue {
+    0% {filter: blur(40px);}
+    52.5%,55% {filter: blur(0);}
+    100% {filter: blur(40px);}
+}
