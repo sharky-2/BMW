@@ -1,4 +1,48 @@
 /* ================================================= */
+/* Menu-section */
+#menu-section {
+    width: 120%;
+    min-height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: -200px;
+}
+#menu-section .menu {
+    background-color: var(--primary-bg-color);
+    
+    height: 50px;
+    width: 100%;
+    padding: 20px 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#menu-section .menu img {width: 80px; margin-right: auto;}
+#menu-section .menu a > input {
+    background: none;
+    
+    font-size: 20px;
+
+    padding: 15px  30px;
+    border: none;
+
+    position: relative;
+    opacity: .5;
+    transition: all .3s;
+}
+#menu-section .menu a > input:hover {opacity: 1;}
+#menu-section .menu a:last-of-type > input{
+    background-color: var(--primary-text-color);
+    color: var(--primary-bg-color);
+    border-radius: 10px;
+}
+
+/* ================================================= */
 /* Header-section */
 #header-section img {
     width: 125px;
@@ -293,4 +337,53 @@
 #card-section .image-section .image-bg:hover {
     transform: rotate(0) scale(1.2);
     z-index: 10;
+}
+
+/* ================================================= */
+/* Accordion */
+#accordion-list .item {
+    padding: 20px;
+    width: 100%;
+    
+    border-bottom: 1px solid var(--dark-white);
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    transition: all .3s;
+}
+#accordion-list .item .question {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+    transition: all .3s;
+}
+#accordion-list .item .question .text {
+    width: calc(100% - 10px);
+}
+#accordion-list .item .question .dropdown {
+    width: max-content;
+    transform: rotate(90deg);
+    transition: all .3s;
+}
+#accordion-list .item .answer {
+    overflow: hidden;
+    max-height: 0;
+    transition: all .3s;
+}
+
+
+/* On click */
+#accordion-list .item.active {
+    background-color: white;
+}
+#accordion-list .item.active .question {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+#accordion-list .item.active .question .dropdown {
+    transform: rotate(270deg);
+}
+#accordion-list .item.active .answer {
+    max-height: 100px;
 }

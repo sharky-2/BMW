@@ -1,31 +1,43 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="sl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio</title>
+    <title>Portfolio</title>
 
     <link rel="stylesheet" href="server/static/css/design.css">
     <link rel="stylesheet" href="server/static/css/style.css">
     <link rel="stylesheet" href="server/static/css/root.css">
 </head>
 <body>
+
+    <!-- ================================================= -->
+    <!-- Menu -->
+    <div id="menu-section">
+        <div class="menu">
+            <img src="/server/static/image/logo/logo.png">
+            <a href="#" class="underline"> <input type="button" value="Domov"> </a>
+            <a href="#"> <input type="button" value="O meni"> </a>
+            <a href="#"> <input type="button" value="Projekti"> </a>
+            <a href="#"> <input type="button" value="Kontakt"> </a>
+        </div>
+    </div>
     
     <!-- ================================================= -->
     <!-- Header -->
-    <div id="header-section">
+    <header id="header-section">
         <img src="server/static/image/other/balloon.png">
         <section class="text-section">
-            <h1 class="title-design">Hey, I'm Blaz.</h1>
-            <h1 class="title-design">building skills & projects</h1>
-            <label class="subtitle-design">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</label>
+            <h1 class="title-design">Živjo, sem Blaž.</h1>
+            <h1 class="title-design">gradim spretnosti in projekte</h1>
+            <label class="subtitle-design">Lorem Ipsum je preprosto besedilo tiskaške in tipografske industrije. Lorem Ipsum je bil standardno besedilo že od 1500-ih let, ko je neznani tiskar vzel galerijo tipov in jo zmešal, da bi ustvaril vzorec tiska.</label>
         </section>
 
         <section class="button-section">
-            <a href="#" class="black-button click-effect"><button>explore more</button></a>
-            <a href="#" class="green-button click-effect"><button>Currently learning new skills</button></a>
+            <a href="#" class="black-button click-effect"><button>raziskuj več</button></a>
+            <a href="#" class="green-button click-effect"><button>Trenutno se učim novih spretnosti</button></a>
         </section>
-    </div>
+    </header>
 
     <!-- ================================================= -->
     <!-- Project cards -->
@@ -34,17 +46,17 @@
             <section class="card">
                 <img src="server/static/image/other/balloon.png">
                 <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-                <label class="hand-writing-design">Lorem Ipsum is simple dummy text</label>
+                <label class="hand-writing-design">Lorem Ipsum je preprosto besedilo</label>
             </section>
             <section class="card">
                 <img src="server/static/image/other/grass.png">
                 <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-                <label class="hand-writing-design">Lorem Ipsum is simple dummy text</label>
+                <label class="hand-writing-design">Lorem Ipsum je preprosto besedilo</label>
             </section>
             <section class="card">
                 <img src="server/static/image/other/balloon.png">
                 <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-                <label class="hand-writing-design">Lorem Ipsum is simple dummy text</label>
+                <label class="hand-writing-design">Lorem Ipsum je preprosto besedilo</label>
             </section>
         </div>
     </div>
@@ -54,7 +66,7 @@
     <!-- About -->
     <div id="about-section">
         <section class="text-section">
-            <h1 class="title-design">about</h1>
+            <h1 class="title-design">O meni</h1>
             <label class="text-design text-appear">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptate ea iste dolores tenetur quas magni recusandae blanditiis fugit. Velit nemo similique laborum ut. Ullam corrupti itaque dignissimos veritatis reiciendis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptate ea iste dolores tenetur quas magni recusandae blanditiis fugit. Velit nemo similique laborum ut. Ullam corrupti itaque dignissimos veritatis reiciendis!</label>
             
             <br><label class="text-design text-appear">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptate ea iste dolores tenetur quas magni recusandae blanditiis fugit. Velit nemo similique laborum ut. Ullam corrupti itaque dignissimos veritatis reiciendis! Lorem ipsum dolor, sit amet consectetur adipisicing elit.</label>
@@ -63,11 +75,11 @@
         <section class="image-section text-appear">
             <div class="image-bg">
                 <img src="server/static/image/other/balloon.png">
-                <label class="hand-writing-design">Lorem Ipsum is simple dummy text</label>
+                <label class="hand-writing-design">Lorem Ipsum je preprosto besedilo</label>
             </div>
             <div class="image-bg">
                 <img src="server/static/image/other/grass.png">
-                <label class="hand-writing-design">Lorem Ipsum is simple dummy text</label>
+                <label class="hand-writing-design">Lorem Ipsum je preprosto besedilo</label>
             </div>
         </section>
     </div>
@@ -75,16 +87,16 @@
     <!-- ================================================= -->
     <!-- Table -->
     <div id="experience-section">
-        <h1 class="title-design">work experience</h1>
+        <h1 class="title-design">Delovne izkušnje</h1>
         <section class="text-table">
 
             <!-- Programming engine -->
             <div class="line text-appear">
                 <div class="left">
-                    <h1 class="subtitle-design">Engine</h1>
+                    <h1 class="subtitle-design">Orodje</h1>
                 </div>
                 <div class="right">
-                    <label class="text">Programming engine</label> 
+                    <label class="text">Programirni okolje</label> 
                     <label class="rank rank-blue">
                         <img src="server/static/image/icon/Vs-code.png">
                         VS Code
@@ -95,10 +107,10 @@
             <!-- Design -->
             <div class="line text-appear">
                 <div class="left">
-                    <h1 class="subtitle-design">Design</h1>
+                    <h1 class="subtitle-design">Oblikovanje</h1>
                 </div>
                 <div class="right">
-                    <label class="text">Designing websites / modules</label> 
+                    <label class="text">Oblikovanje spletnih strani / modulov</label> 
                     <label class="rank rank-orange">
                         <img src="server/static/image/icon/figma.webp">
                         Figma
@@ -109,13 +121,13 @@
             <!-- Learning -->
             <div class="line text-appear">
                 <div class="left">
-                    <h1 class="subtitle-design">Learning</h1>
+                    <h1 class="subtitle-design">Učenje</h1>
                 </div>
                 <div class="right">
                     <label class="text">w3school / gpt / youtube / github</label> 
                     <label class="rank rank-gray">
                         <img src="server/static/image/icon/tips.png">
-                        Learn
+                        Učenje
                     </label>
                 </div>
             </div>
@@ -126,11 +138,11 @@
     <!-- ================================================= -->
     <!-- Title -->
     <div id="grid-title">
-        <h1 class="title-design autoBlur">student</h1>
-        <h1 class="title-design autoBlur">designer</h1>
-        <h1 class="title-design autoBlur">developer</h1>
-        <h1 class="title-design autoBlur">explore</h1>
-        <h1 class="title-design autoBlur">see more &#8599;</h1>
+        <h1 class="title-design autoBlur">študent</h1>
+        <h1 class="title-design autoBlur">oblikovalec</h1>
+        <h1 class="title-design autoBlur">razvijalec</h1>
+        <h1 class="title-design autoBlur">raziskuj</h1>
+        <h1 class="title-design autoBlur">poglej več</h1>
     </div>
 
     <!-- ================================================= -->
@@ -147,7 +159,7 @@
     
             <section class="button-section">
                 <a href="#" class="gray-button click-effect">
-                    <button>explore more</button>
+                    <button>raziskuj več</button>
                     <img src="server/static/image/icon/right-arrow.png">
                 </a>
             </section>
@@ -164,7 +176,7 @@
     
             <section class="button-section">
                 <a href="#" class="gray-button click-effect">
-                    <button>explore more</button>
+                    <button>raziskuj več</button>
                     <img src="server/static/image/icon/right-arrow.png">
                 </a>
             </section>
@@ -174,38 +186,71 @@
     <!-- ================================================= -->
     <!-- Title / subtitle -->
     <div id="title-section" style="margin-bottom: -100px;" class="text-appear">
-        <h1 class="title-design">How can i help?</h1>
-        <label class="subtitle-design">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</label>
+        <h1 class="title-design">Kako vam lahko pomagam?</h1>
+        <label class="subtitle-design">Lorem Ipsum je preprosto besedilo tiskaške in tipografske industrije.</label>
     </div>
+
+    <!-- ================================================= -->
+    <!-- Accordion -->
+    <div id="accordion-list">
+        <div class="item">
+            <div class="question">
+                <label class="text">Kreativni projekti</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer">Opis kreativnih projektov in idej, ki jih ustvarjaš za zabavo, kot so igre, umetniške kreacije in drugo.</div>
+        </div>
+        <div class="item">
+            <div class="question">
+                <label class="text">Chrome razširitve</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer">Razvijanje Chrome razširitev za izboljšanje vsakodnevne uporabniške izkušnje ali povečanje produktivnosti.</div>
+        </div>
+        <div class="item">
+            <div class="question">
+                <label class="text">Šolski projekti</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer">Projekti, ki jih ustvarjaš za šolo, kot so naloge, predstavitve ali učni materiali.</div>
+        </div>
+        <div class="item">
+            <div class="question">
+                <label class="text">Zabavni projekti</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer">Razvijanje zabavnih projektov, kot so igre ali aplikacije, ki so namenjene sprostitvi in zabavi.</div>
+        </div>
+    </div>
+    
 
     <!-- ================================================= -->
     <!-- Cards -->
     <div id="card-section">
 
-        <section class="image-section text-appear">
+        <section class="image-section">
             <div class="image-bg">
                 <img src="server/static/image/other/balloon.png">
-                <h1 class="hand-writing-design">Creative projects</h1>
+                <h1 class="hand-writing-design">Kreativni projekti</h1>
             </div>
 
             <div class="image-bg">
                 <img src="server/static/image/other/grass.png">
-                <h1 class="hand-writing-design">Chrome extension</h1>
+                <h1 class="hand-writing-design">Chrome razširitve</h1>
             </div>
 
             <div class="image-bg">
                 <img src="server/static/image/other/grass.png">
-                <h1 class="hand-writing-design">School projects</h1>
+                <h1 class="hand-writing-design">Šolski projekti</h1>
             </div>
 
             <div class="image-bg">
                 <img src="server/static/image/other/balloon.png">
-                <h1 class="hand-writing-design">Fun projects</h1>
+                <h1 class="hand-writing-design">Zabavni projekti</h1>
             </div>
         </section>
 
     </div>
-
 
     <div></div>
 

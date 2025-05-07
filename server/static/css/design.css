@@ -19,6 +19,8 @@ body {
     border-right: 4px solid var(--dark-white);
 
     overflow-x: hidden;
+
+    position: relative;
 }
 body > div {
     width: 100%;
@@ -42,14 +44,11 @@ a {text-decoration: none;}
     align-items: start;
     flex-direction: column;
 }
-
-
-
 .text-section-liner h1 {font-size: 30px;}
 .text-section-liner label {font-size: 20px;}
 .button-section {
     display: flex;
-    justify-content: center;
+    justify-content: start;
     align-items: center;
     gap: 20px;
 }
@@ -77,7 +76,8 @@ a {text-decoration: none;}
 }
 /* ================================================= */
 /* Buttons */
-.black-button > button {
+.black-button > button,
+.black-button > input {
     background-color: var(--primary-text-color);
     color: var(--primary-bg-color);
 
@@ -130,7 +130,8 @@ a {text-decoration: none;}
     align-items: center;
     gap: 20px;
 }
-.gray-button > button {
+.gray-button > button,
+.gray-button > input {
     background: none;
     font-size: 25px;
     text-transform: capitalize;
