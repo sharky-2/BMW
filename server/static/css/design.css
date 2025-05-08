@@ -34,7 +34,7 @@ body > div {
 
 }
 h1 {margin: 0;}
-a {text-decoration: none;}
+a {text-decoration: none; color: var(--primary-text-color);}
 
 /* ================================================= */
 /* Sections */
@@ -145,6 +145,44 @@ a {text-decoration: none;}
 }
 
 /* ================================================= */
+/* Border */
+.top-bottom-border {position: relative;}
+.top-bottom-border::before {
+    content: "";
+    background: linear-gradient(
+        90deg,
+        var(--primary-bg-color),
+        var(--dark-white),
+        var(--dark-white),
+        var(--dark-white),
+        var(--primary-bg-color)
+    );
+    height: 5px;
+    width: 100%;
+
+    position: absolute;
+    bottom: -100px;
+    left: 0;
+}
+.top-bottom-border::after {
+    content: "";
+    background: linear-gradient(
+        90deg,
+        var(--primary-bg-color),
+        var(--dark-white),
+        var(--dark-white),
+        var(--dark-white),
+        var(--primary-bg-color)
+    );
+    height: 5px;
+    width: 100%;
+
+    position: absolute;
+    top: -100px;
+    left: 0;
+}
+
+/* ================================================= */
 /* Effects */
 button {cursor: pointer;}
 .click-effect {transition: all .3s; cursor: pointer;}
@@ -185,7 +223,7 @@ button {cursor: pointer;}
 
 /* ================================================= */
 /* Animations */
-.text-appear {
+/* .text-appear {
     animation: text-appear linear;
     animation-timeline: view(60% auto);
 }
@@ -200,12 +238,12 @@ button {cursor: pointer;}
 .text-slide-right {
     animation: text-slide-right linear;
     animation-timeline: view(60% auto);
-}
+} */
 .autoBlur {
     animation: text-blue linear;
     animation-timeline: view();
 }
-@keyframes text-appear {
+/* @keyframes text-appear {
     from {transform: translateY(500px) scale(.3); opacity: 0;} 
     to {transform: translateY(0) scale(1); opacity: 1;}
 }
@@ -220,7 +258,7 @@ button {cursor: pointer;}
 @keyframes text-slide-right {
     from {transform: translateX(-100%); opacity: 0;} 
     to {transform: translateY(0); opacity: 1;}
-}
+} */
 @keyframes text-blue {
     0% {filter: blur(40px);}
     52.5%,55% {filter: blur(0);}
