@@ -1,8 +1,8 @@
 body {
     background-color: var(--primary-bg-color);
     color: var(--primary-text-color);
+    /* width: 1000px; */
     width: 1000px;
-
     font-family: var(--text-font);
 
     margin: 0 auto;
@@ -35,6 +35,8 @@ body > div {
 }
 h1 {margin: 0;}
 a {text-decoration: none; color: var(--primary-text-color);}
+a label,
+a input {cursor: pointer;}
 
 /* ================================================= */
 /* Sections */
@@ -263,4 +265,128 @@ button {cursor: pointer;}
     0% {filter: blur(40px);}
     52.5%,55% {filter: blur(0);}
     100% {filter: blur(40px);}
+}
+
+/* ================================================= */
+/* Media */
+
+/* Pc */
+@media (min-width: 1500px) {
+    body {
+        width: 1000px;
+    }
+}
+
+/* Tablet */
+@media (max-width: 1200px) {
+    body {
+        width: 750px;
+        padding-inline: 50px;
+    }
+    
+    .button-section {
+        flex-direction: column;
+    }
+
+    #card-slide-projects-section {
+        width: 77% !important;
+    }
+    #card-slide-projects-section .card-slider-track .card {
+        height: 400px;
+        width: 550px;
+    }
+
+    .image-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #about-section .image-section .image-bg:nth-child(1) {
+        left: 0 !important;
+        top: 50px;
+    }
+    #about-section .image-section .image-bg:nth-child(2) {
+        top: -100px;
+        right: 0 !important;
+    }
+
+    #grid-title h1 {
+        font-size: 120px !important;
+        letter-spacing: 0 !important;
+    }
+
+    #projects {
+        width: 100% !important;
+    }
+    #project-section {
+        width: 100% !important;
+    }
+
+    #title-section {
+        text-align: center;
+    }
+
+    #card-section {height: 1300px !important;}
+    #card-section .image-section .image-bg:nth-child(1) {left: 0 !important; top: 0;}
+    #card-section .image-section .image-bg:nth-child(2) {left: 400px !important; top: 250px;}
+    #card-section .image-section .image-bg:nth-child(3) {left: 0 !important; top: 550px !important;}
+    #card-section .image-section .image-bg:nth-child(4) {right: 0 !important; bottom: 0;}
+}
+
+/* Phone */
+@media (max-width: 768px) {
+    
+    body {
+        width: 100%;
+        padding-inline: 50px;
+    }
+
+    .button-section {
+        flex-direction: column;
+    }
+
+    #card-slide-projects-section {
+        width: 77% !important;
+    }
+    #card-slide-projects-section .card-slider-track .card {
+        height: 400px;
+        width: 550px;
+    }
+
+    .image-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    #about-section .image-section .image-bg:nth-child(1) {
+        left: 0 !important;
+        top: 50px;
+    }
+    #about-section .image-section .image-bg:nth-child(2) {
+        top: -100px;
+        right: 0 !important;
+    }
+
+    #grid-title h1 {
+        font-size: 100px !important;
+    }
+
+    #projects {
+        width: 100% !important;
+    }
+    #project-section {
+        width: 100% !important;
+    }
+
+    #title-section {
+        text-align: center;
+    }
+
+    #card-section {height: 1300px !important;}
+    #card-section .image-section .image-bg:nth-child(1) {left: 0 !important; top: 0;}
+    #card-section .image-section .image-bg:nth-child(2) {left: 400px !important; top: 250px;}
+    #card-section .image-section .image-bg:nth-child(3) {left: 0 !important; top: 550px !important;}
+    #card-section .image-section .image-bg:nth-child(4) {right: 0 !important; bottom: 0;}
 }
