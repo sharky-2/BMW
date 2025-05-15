@@ -31,8 +31,9 @@ body > div {
     align-items: start;
     flex-direction: column;
     gap: 10px;
-
 }
+
+
 h1 {margin: 0;}
 a {text-decoration: none; color: var(--primary-text-color);}
 a label,
