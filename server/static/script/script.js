@@ -25,3 +25,14 @@ accordion_list.forEach(item => {
         } 
     })
 })
+
+// =================================================
+// Dropdown
+function toggleDropdown_Projects() {
+    const dropdown = document.querySelector(".dropdown_projects")
+    dropdown.classList.toggle("show")
+}
+function toggleDropdown_Other() {
+    const dropdown = document.querySelector(".dropdown_other")
+    dropdown.classList.toggle("show")
+}

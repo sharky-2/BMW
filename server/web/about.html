@@ -17,9 +17,32 @@
         <div class="menu">
             <img src="../static/image/logo/logo.png">
             <a href="../../index.html" class="underline"> <input type="button" value="Domov"> </a>
-            <a href="about.html"> <input type="button" value="O meni"> </a>
-            <a href="web-projects.html"> <input type="button" value="Projekti"> </a>
+            <a href="../web/about.html"> <input type="button" value="O meni"> </a>
+
+            <!-- Dropdown Projects -->
+            <div class="dropdown_projects">
+                <input type="button" value="Projekti" onclick="toggleDropdown_Projects()">
+                <div class="dropdown-content" id="projects-list">
+                    <a href="../web/projects.html" class="text-design">All</a>
+                    <a href="../web/web-projects.html" class="text-design">Web</a>
+                    <a href="../web/game-projects.html" class="text-design">Game</a>
+                </div>
+            </div>
+
+            <!-- Dropdown Other -->
+            <div class="dropdown_other">
+                <input type="button" value="Other" onclick="toggleDropdown_Other()">
+                <div class="dropdown-content" id="projects-list">
+                    <a href="../web/journal.html" class="text-design">Journal</a>
+                    <a href="../web/media.html" class="text-design">Media</a>
+                    <a href="../web/resume.html" class="text-design">Resume</a>
+                    <a href="../web/skills-tools.html" class="text-design">Skills & Tools</a>
+                    <a href="../web/process.html" class="text-design">Process</a>
+                </div>
+            </div>
+
             <a href="#"> <input type="button" value="Kontakt"> </a>
+
         </div>
     </div>
 
@@ -50,45 +73,31 @@
     <div id="accordion-list">
         <div class="item">
             <div class="question">
-                <label class="text">Kreativni projekti</label>
+                <label class="text text-design">Kreativni projekti</label>
                 <div class="dropdown">></div>
             </div>
-            <div class="answer">Opis kreativnih projektov in idej, ki jih ustvarjaš za zabavo, kot so igre, umetniške kreacije in drugo.</div>
+            <div class="answer text-design">Opis kreativnih projektov in idej, ki jih ustvarjaš za zabavo, kot so igre, umetniške kreacije in drugo.</div>
         </div>
         <div class="item">
             <div class="question">
-                <label class="text">Chrome razširitve</label>
+                <label class="text text-design">Chrome razširitve</label>
                 <div class="dropdown">></div>
             </div>
-            <div class="answer">Razvijanje Chrome razširitev za izboljšanje vsakodnevne uporabniške izkušnje ali povečanje produktivnosti.</div>
+            <div class="answer text-design">Razvijanje Chrome razširitev za izboljšanje vsakodnevne uporabniške izkušnje ali povečanje produktivnosti.</div>
         </div>
         <div class="item">
             <div class="question">
-                <label class="text">Šolski projekti</label>
+                <label class="text text-design">Šolski projekti</label>
                 <div class="dropdown">></div>
             </div>
-            <div class="answer">Projekti, ki jih ustvarjaš za šolo, kot so naloge, predstavitve ali učni materiali.</div>
+            <div class="answer text-design">Projekti, ki jih ustvarjaš za šolo, kot so naloge, predstavitve ali učni materiali.</div>
         </div>
         <div class="item">
             <div class="question">
-                <label class="text">Zabavni projekti</label>
+                <label class="text text-design">Zabavni projekti</label>
                 <div class="dropdown">></div>
             </div>
-            <div class="answer">Razvijanje zabavnih projektov, kot so igre ali aplikacije, ki so namenjene sprostitvi in zabavi.</div>
-        </div>
-        <div class="item">
-            <div class="question">
-                <label class="text">Zabavni projekti</label>
-                <div class="dropdown">></div>
-            </div>
-            <div class="answer">Razvijanje zabavnih projektov, kot so igre ali aplikacije, ki so namenjene sprostitvi in zabavi.</div>
-        </div>
-        <div class="item">
-            <div class="question">
-                <label class="text">Zabavni projekti</label>
-                <div class="dropdown">></div>
-            </div>
-            <div class="answer">Razvijanje zabavnih projektov, kot so igre ali aplikacije, ki so namenjene sprostitvi in zabavi.</div>
+            <div class="answer text-design">Razvijanje zabavnih projektov, kot so igre ali aplikacije, ki so namenjene sprostitvi in zabavi.</div>
         </div>
     </div>
 
