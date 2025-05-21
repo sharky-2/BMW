@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="sl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="../static/css/design.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/root.css">
+</head>
+<body>
+
+    <!-- ================================================= -->
+    <!-- Menu -->
+    <div id="menu-section">
+        <div class="menu">
+            <img src="../static/image/logo/logo.png">
+            <a href="#" class="underline"> <input type="button" value="Domov"> </a>
+            <a href="../web/about.html"> <input type="button" value="O meni"> </a>
+
+            <!-- Dropdown Projects -->
+            <div class="dropdown_projects">
+                <input type="button" value="Projekti" onclick="toggleDropdown_Projects()">
+                <div class="dropdown-content" id="projects-list">
+                    <a href="../web/projects.html" class="text-design">All</a>
+                    <a href="../web/web-projects.html" class="text-design">Web</a>
+                    <a href="../web/game-projects.html" class="text-design">Game</a>
+                </div>
+            </div>
+
+            <!-- Dropdown Other -->
+            <div class="dropdown_other">
+                <input type="button" value="Other" onclick="toggleDropdown_Other()">
+                <div class="dropdown-content" id="projects-list">
+                    <a href="../web/journal.html" class="text-design">Journal</a>
+                    <a href="../web/media.html" class="text-design">Media</a>
+                    <a href="../web/resume.html" class="text-design">Resume</a>
+                    <a href="../web/skills-tools.html" class="text-design">Skills & Tools</a>
+                    <a href="../web/process.html" class="text-design">Process</a>
+                </div>
+            </div>
+
+            <a href="../web/contact.html"> <input type="button" value="Kontakt"> </a>
+
+        </div>
+    </div>
+    
+    <!-- ================================================= -->
+    <!-- Header -->
+    <header id="header-section">
+        <img src="../static/image/other/balloon.png">
+        <section class="text-section">
+            <h1 class="title-design">Živjo, sem Blaž.</h1>
+            <h1 class="title-design">gradim spretnosti in projekte</h1>
+            <label class="subtitle-design">Lorem Ipsum je preprosto besedilo tiskaške in tipografske industrije. Lorem Ipsum je bil standardno besedilo že od 1500-ih let, ko je neznani tiskar vzel galerijo tipov in jo zmešal, da bi ustvaril vzorec tiska.</label>
+        </section>
+
+        <section class="button-section">
+            <a href="#" class="black-button click-effect"><button>raziskuj več</button></a>
+            <a href="#" class="green-button click-effect"><button>Trenutno se učim novih spretnosti</button></a>
+        </section>
+    </header>    
+
+    <!-- ================================================= -->
+    <!-- Accordion -->
+    <div id="accordion-list">
+        <div class="item">
+            <div class="question">
+                <label class="text text-design">Kreativni projekti</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-design">Opis kreativnih projektov in idej, ki jih ustvarjaš za zabavo, kot so igre, umetniške kreacije in drugo.</div>
+        </div>
+        <div class="item">
+            <div class="question">
+                <label class="text text-design">Chrome razširitve</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-design">Razvijanje Chrome razširitev za izboljšanje vsakodnevne uporabniške izkušnje ali povečanje produktivnosti.</div>
+        </div>
+        <div class="item">
+            <div class="question">
+                <label class="text text-design">Šolski projekti</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-design">Projekti, ki jih ustvarjaš za šolo, kot so naloge, predstavitve ali učni materiali.</div>
+        </div>
+        <div class="item">
+            <div class="question">
+                <label class="text text-design">Zabavni projekti</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-design">Razvijanje zabavnih projektov, kot so igre ali aplikacije, ki so namenjene sprostitvi in zabavi.</div>
+        </div>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- About -->
+    <div id="about-section">
+        <section class="text-section">
+            <h1 class="title-design">O meni</h1>
+            <label class="text-design text-appear">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptate ea iste dolores tenetur quas magni recusandae blanditiis fugit. Velit nemo similique laborum ut. Ullam corrupti itaque dignissimos veritatis reiciendis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptate ea iste dolores tenetur quas magni recusandae blanditiis fugit. Velit nemo similique laborum ut. Ullam corrupti itaque dignissimos veritatis reiciendis!</label>
+            
+            <br><label class="text-design text-appear">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptate ea iste dolores tenetur quas magni recusandae blanditiis fugit. Velit nemo similique laborum ut. Ullam corrupti itaque dignissimos veritatis reiciendis! Lorem ipsum dolor, sit amet consectetur adipisicing elit.</label>
+        </section>
+
+        <section class="image-section text-appear">
+            <div class="image-bg">
+                <img src="../static/image/other/space-ship.png">
+                <label class="hand-writing-design">Modeling</label>
+            </div>
+            <div class="image-bg">
+                <img src="../static/image/other/code.png">
+                <label class="hand-writing-design">Programming</label>
+            </div>
+        </section>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Footer -->
+    <footer>
+        <div class="left">
+            <h1 class="subtitle-design">Kontakt</h1>
+            <label class="text-design">example@gmail.com</label>
+            <label class="text-design">30 300 300 300</label> 
+        </div>
+        <div class="middle">
+            <h1 class="subtitle-design">Delam</h1>
+            <label class="text-design">Spletne strani</label>
+            <label class="text-design">3D / 2D igrice</label>
+            <label class="text-design">Zabavne programe</label>
+            <label class="text-design">In še več</label>
+        </div>
+        <div class="right">
+            <h1 class="subtitle-design">Splet</h1>
+            <a href="https://github.com/sharky-2" target="_blank"> <label class="text-design">GitHub</label> </a>
+        </div>
+    </footer>
+
+    <script src="../static/script/script.js"></script>
+</body>
+</html>
