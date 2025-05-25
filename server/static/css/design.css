@@ -226,20 +226,20 @@ button {cursor: pointer;}
 }
 .rank img {width: 30px; color: var(--primary-text-color);}
 .rank-blue {
-    background: url("/server/static/image/shapes/blue-shape.jpg");
+    background: url("server/static/image/shapes/blue-shape.jpg");
     background-position: center;
     background-size: cover;
 
     border: 1px solid var(--blue);
 }
 .rank-orange {
-    background: url("/server/static/image/shapes/orange-shape.jpg");
+    background: url("server/static/image/shapes/orange-shape.jpg");
     background-position: center;
     background-size: cover;
     border: 1px solid var(--orange);
 }
 .rank-gray {
-    background: url("/server/static/image/shapes/Gray-shape.jpg");
+    background: url("server/static/image/shapes/Gray-shape.jpg");
     background-position: center;
     background-size: cover;
     border: 1px solid var(--gray);
