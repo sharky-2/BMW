@@ -91,8 +91,6 @@
     display: flex;
 }
 
-
-
 /* ================================================= */
 /* Header-section */
 #header-section img {
@@ -109,12 +107,147 @@
 }
 
 /* ================================================= */
+/* Header-section-2 */
+#header-section-2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+#header-section-2 .text-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    text-align: center;
+    gap: 30px;
+}
+
+/* ================================================= */
+/* Image-grid */
+#image-grid {
+    height: 500px;
+}
+.image-section {
+    position: relative;
+}
+.image-section .image-bg {
+    border-radius: 40px;
+    width: 350px;
+    height: 400px;
+
+    align-items: start;
+    position: absolute;
+}
+.image-section .image-bg img {
+    border-radius: 30px;
+}
+#image-grid .image-section .image-bg:nth-child(1) {left: -10%; transform: rotate(5deg);}
+#image-grid .image-section .image-bg:nth-child(2) {left: 18%; top: 10%; transform: rotate(-8deg);}
+#image-grid .image-section .image-bg:nth-child(3) {right: 18%; top: 5%; transform: rotate(10deg);}
+#image-grid .image-section .image-bg:nth-child(4) {right: -10%; top: -5%; transform: rotate(-2deg);}
+
+/* ================================================= */
+/* Card-grid */
+#card-grid {
+    height: 800px;
+}
+#card-grid .card-section {
+    height: 100%;
+    position: relative;
+}
+#card-grid .card-section .card-bg {
+    color: var(--primary-bg-color);
+    width: 350px;
+    height: 350px;
+    padding: 20px;
+
+    display: flex;
+    justify-content: end;
+    flex-direction: column;
+
+    border-radius: 40px; 
+    position: absolute;
+    transition: all .3s;
+
+    cursor: pointer;
+    box-shadow: 0 25px 45px rgba(0,0,0,.1);
+}
+#card-grid .card-section .card-bg:nth-child(1) {
+    background: url("/server/static/image/shapes/blue-shape.jpg");
+    background-position: center;
+    background-size: cover;
+    left: -120px; transform: rotate(5deg);
+}
+#card-grid .card-section .card-bg:nth-child(2) {
+    background: url("/server/static/image/shapes/orange-shape.jpg");
+    background-position: center;
+    background-size: cover;
+    left: 170px; top: 5%; transform: rotate(-8deg);
+}
+#card-grid .card-section .card-bg:nth-child(3) {
+    background: url("/server/static/image/shapes/Purple-shape.jpg");
+    background-position: center;
+    background-size: cover;
+    left: 500px; top: 5%; transform: rotate(5deg);
+}
+#card-grid .card-section .card-bg:nth-child(4) {
+    background: url("/server/static/image/shapes/Green-shape.jpg");
+    background-position: center;
+    background-size: cover;
+    left: 850px; top: -5%; transform: rotate(-2deg);
+}
+#card-grid .card-section .card-bg:nth-child(5) {
+    background: url("/server/static/image/shapes/Green-shape.jpg");
+    background-position: center;
+    background-size: cover;
+    left: -120px; top: 50%; transform: rotate(-5deg);
+}
+#card-grid .card-section .card-bg:nth-child(6) {
+    background: url("/server/static/image/shapes/blue-shape.jpg");
+    background-position: center;
+    background-size: cover;
+    left: 170px; top: 56%; transform: rotate(8deg);
+}
+#card-grid .card-section .card-bg:nth-child(7) {
+    background: url("/server/static/image/shapes/orange-shape.jpg");
+    background-position: center;
+    background-size: cover;
+    left: 500px; top: 50%; transform: rotate(5deg);
+}
+#card-grid .card-section .card-bg:nth-child(8) {
+    background: url("/server/static/image/shapes/Purple-shape.jpg");
+    background-position: center;
+    background-size: cover;
+    left: 850px; top: 45%; transform: rotate(-2deg);
+}
+#card-grid .card-section .card-bg:hover {
+    z-index: 10;
+}
+#card-grid .card-section .card-bg:hover:nth-child(1),
+#card-grid .card-section .card-bg:hover:nth-child(5) {
+    width: 500px;
+    transform: translateX(0px);
+}
+#card-grid .card-section .card-bg:hover:nth-child(2),
+#card-grid .card-section .card-bg:hover:nth-child(3),
+#card-grid .card-section .card-bg:hover:nth-child(4),
+#card-grid .card-section .card-bg:hover:nth-child(6),
+#card-grid .card-section .card-bg:hover:nth-child(7),
+#card-grid .card-section .card-bg:hover:nth-child(8) {
+    width: 500px;
+    transform: translateX(-200px);
+}
+
+/* ================================================= */
 /* Skills-section */
-#skills-section {
+#moving-grid-section {
     min-height: 100px;
     margin-bottom: -100px;
+    overflow: hidden;
 }
-#skills-section .moving-line {
+#moving-grid-section .moving-line {
     margin-bottom: -100px;
 
     display: flex;
@@ -122,17 +255,39 @@
     align-items: center;
     flex-direction: row;
     position: relative;
-    gap: 50px;
 
     animation: moving-skills 5s infinite alternate linear;
-
 }
-#skills-section label {
-    min-width: fit-content;
+#moving-grid-section .moving-line .image-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+#moving-grid-section .moving-line .image-section .image-bg {
+    height: 200px;
+    width: 300px;
+    position: relative;
+}
+#moving-grid-section .moving-line .image-section .image-bg h1 {
+    position: absolute;
+    color: var(--primary-bg-color);
+    font-size: 60px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+#moving-grid-section .moving-line .image-section .image-bg img {
+    width: 100%;
+    height: 100%;
+}
+#moving-grid-section .card-bg {
+    background: url("/server/static/image/shapes/Purple-shape.jpg");
+    background-position: center;
+    background-size: cover;
 }
 @keyframes moving-skills {
     0% {
-        transform: translateX(0);
+        transform: translateX(30%);
     } 100% {
         transform: translateX(-50%);
     }
@@ -144,9 +299,6 @@
     width: 100%;
     display: flex;
     justify-content: center;
-
-    margin-top: 200px;
-    margin-bottom: 200px;
 }
 #card-slide-projects-section .card-slider-track {
     display: flex;
@@ -155,7 +307,7 @@
     gap: 100px;
 }
 #card-slide-projects-section .card {
-    background-color: var(--dark-white);
+    background-color: var(--primary-bg-color);
 
     height: 550px;
     width: 900px;
@@ -172,11 +324,14 @@
     align-items: center;
     position: relative;
     flex-direction: column;
+
+    border-radius: 40px;
 }
 #card-slide-projects-section .card img {
     width: 100%;
     height: 90%;
     object-fit: cover;
+    border-radius: 20px;
 }
 #card-slide-projects-section .card label {font-size: 25px;}
 
@@ -287,18 +442,53 @@
     min-height: 70px;
     display: flex;
     justify-content: start;
-    align-items: center;
+    align-items: start;
 }
 #grid-title {
     height: 800px;
     position: relative;
 }
-#grid-title h1 {font-size: 150px; position: absolute; letter-spacing: 20px;}
-#grid-title h1:nth-child(1) {left: 0; top: 0;}
-#grid-title h1:nth-child(2) {right: 0; top: 150px;}
-#grid-title h1:nth-child(3) {right: 100px; top: 300px;}
-#grid-title h1:nth-child(4) {right: 0px; top: 450px;}
-#grid-title h1:nth-child(5) {left: 10px; top: 600px}
+#grid-title h1 {
+    font-size: 150px;
+    letter-spacing: 20px;
+    position: absolute; 
+}
+
+#grid-title h1:nth-child(1) {
+    background: url("/server/static/image/shapes/orange-shape.jpg") center/cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    left: 0; top: 0;}
+#grid-title h1:nth-child(2) {
+    background: url("/server/static/image/shapes/Gray-shape.jpg") center/cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    right: 0; top: 150px;}
+#grid-title h1:nth-child(3) {
+    background: url("/server/static/image/shapes/blue-shape.jpg") center/cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    right: 100px; top: 300px;}
+#grid-title h1:nth-child(4) {
+    background: url("/server/static/image/shapes/Purple-shape.jpg") center/cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    right: 0px; top: 450px;}
+#grid-title h1:nth-child(5) {
+    background: url("/server/static/image/shapes/Green-shape.jpg") center/cover;
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    -webkit-text-fill-color: transparent;
+    left: 10px; top: 600px}
 
 /* ================================================= */
 /* Projects */
@@ -319,13 +509,13 @@
 }
 #project-section {
     background-color: var(--primary-bg-color);
-    width: calc(100% - 15%);
-    box-shadow: 0 25px 45px rgba(0,0,0,.1);
+    width: calc(100% - 80px);
     padding: 40px;
 
     border: 1px solid rgba(255,255,255,0.5);
     border-right: 1px solid rgba(255,255,255,0.2);
     border-bottom: 1px solid rgba(255,255,255,0.2);
+    border-radius: 60px;
 
     position: sticky;
     top: 0;
@@ -342,8 +532,9 @@
 }
 #project-section .image-bg img {
     width: 100%;
-    height: 100%;
+    height: 900px;
     object-fit: cover;
+    border-radius: 30px;
 }
 #project-section .subtitle-design {
     margin-top: 20px;
@@ -399,7 +590,7 @@
 /* Accordion */
 #accordion-list .item {
     padding: 20px;
-    width: 100%;
+    width: 95%;
     
     border-bottom: 1px solid var(--dark-white);
     margin-bottom: 20px;
@@ -422,6 +613,13 @@
     transform: rotate(90deg);
     transition: all .3s;
 }
+#accordion-list .item img {
+    object-fit: cover;
+    width: 100%;
+    height: 300px;
+
+    border-radius: 20px;
+}
 #accordion-list .item .answer {
     overflow: hidden;
     max-height: 0;
@@ -440,7 +638,7 @@
     transform: rotate(270deg);
 }
 #accordion-list .item.active .answer {
-    max-height: 100px;
+    max-height: 300px;
 }
 
 /* ================================================= */
