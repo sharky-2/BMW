@@ -245,50 +245,6 @@ button {cursor: pointer;}
     border: 1px solid var(--gray);
 }
 
-/* ================================================= */
-/* Animations */
-/* .text-appear {
-    animation: text-appear linear;
-    animation-timeline: view(60% auto);
-}
-.text-appear-2 {
-    animation: text-appear-2 linear;
-    animation-timeline: view(80% auto);
-}
-.text-slide-left {
-    animation: text-slide-left linear;
-    animation-timeline: view(60% auto);
-}
-.text-slide-right {
-    animation: text-slide-right linear;
-    animation-timeline: view(60% auto);
-} */
-.autoBlur {
-    animation: text-blue linear;
-    animation-timeline: view();
-}
-/* @keyframes text-appear {
-    from {transform: translateY(500px) scale(.3); opacity: 0;} 
-    to {transform: translateY(0) scale(1); opacity: 1;}
-}
-@keyframes text-appear-2 {
-    from {transform: translateY(400px); opacity: 0;} 
-    to {transform: translateY(0) ; opacity: 1;}
-}
-@keyframes text-slide-left {
-    from {transform: translateX(100%); opacity: 0;} 
-    to {transform: translateY(0); opacity: 1;}
-}
-@keyframes text-slide-right {
-    from {transform: translateX(-100%); opacity: 0;} 
-    to {transform: translateY(0); opacity: 1;}
-} */
-@keyframes text-blue {
-    0% {filter: blur(40px);}
-    52.5%,55% {filter: blur(0);}
-    100% {filter: blur(40px);}
-}
-
 /* =================================================
 /* Media */
 
@@ -411,4 +367,122 @@ button {cursor: pointer;}
     #card-section .image-section .image-bg:nth-child(2) {left: 400px !important; top: 250px;}
     #card-section .image-section .image-bg:nth-child(3) {left: 0 !important; top: 550px !important;}
     #card-section .image-section .image-bg:nth-child(4) {right: 0 !important; bottom: 0;}
+}
+
+/* ================================================= */
+/* Load Animations */
+h1 {animation: title_load 1s forwards;}
+label {animation: label_load 1s forwards;}
+a {animation: button_load 1s forwards;}
+input {animation: button_load 1s forwards;}
+.image-bg {animation: image_load 1s forwards;}
+.card {animation: card_load 1s forwards;}
+/* .card-bg {animation: card_load 1s forwards;} */
+
+@keyframes title_load {
+    from {
+        transform: translateX(-300px) scale(.7);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes label_load {
+    from {
+        transform: translateX(300px) scale(.7);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0px);
+        opacity: 1;
+    }
+}
+
+@keyframes button_load {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(.9);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes image_load {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(.9);
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes card_load {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(.9);
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes title_2_load {
+    0% {
+        transform: scale(0.7);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+    }
+    75% {
+        transform: scale(.9);
+        opacity: 1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+/* ================================================= */
+/* Other Animations */
+.autoBlur {
+    animation: text-blue linear;
+    animation-timeline: view();
+}
+
+@keyframes text-blue {
+    0% {filter: blur(40px);}
+    52.5%,55% {filter: blur(0);}
+    100% {filter: blur(40px);}
 }
