@@ -29,14 +29,23 @@ accordion_list.forEach(item => {
 // =================================================
 // Dropdown
 function toggleDropdown_Projects() {
-    const dropdown = document.querySelector(".dropdown_projects")
+    const dropdown = document.querySelector(".dropdown-section")
+    const downdownP = document.querySelector(".dropdown_projects")
+    const dropdownO = document.querySelector(".dropdown_other")
+    downdownP.classList.add("show")
+    dropdownO.classList.remove("show")
+
     dropdown.classList.toggle("show")
 }
 function toggleDropdown_Other() {
-    const dropdown = document.querySelector(".dropdown_other")
+    const dropdown = document.querySelector(".dropdown-section")
+    const downdownP = document.querySelector(".dropdown_projects")
+    const dropdownO = document.querySelector(".dropdown_other")
+    downdownP.classList.remove("show")
+    dropdownO.classList.add("show")
+
     dropdown.classList.toggle("show")
 }
-
 // ===============================================================
 // Auto resize textarea of chat
 const textarea = document.getElementById("message-input")
