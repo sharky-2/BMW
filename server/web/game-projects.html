@@ -12,7 +12,7 @@
 <body>
 
     <!-- ================================================= -->
-    <!-- Menu -->
+    <!-- Meni -->
     <div id="menu-section">
         <div class="menu">
             <img src="../static/image/logo/logo.png">
@@ -20,340 +20,68 @@
             <a href="../web/about.html"> <input type="button" value="O meni"> </a>
 
             <input type="button" value="Projekti" onclick="toggleDropdown_Projects()">
-            <input type="button" value="Other" onclick="toggleDropdown_Other()">
+            <input type="button" value="Drugo" onclick="toggleDropdown_Other()">
             <a href="../web/contact.html"> <input type="button" value="Kontakt"> </a>
             
         </div>
         <div class="dropdown-section">
 
-            <!-- Dropdown Projects -->
+            <!-- Spustni meni Projekti -->
             <div class="dropdown_projects">
-                <a href="../web/projects.html" class="text-design">All</a>
-                <a href="../web/web-projects.html" class="text-design">Web</a>
-                <a href="../web/game-projects.html" class="text-design">Game</a>
+                <a href="../web/projects.html" class="text-design">Vsi</a>
+                <a href="../web/web-projects.html" class="text-design">Splet</a>
+                <a href="../web/game-projects.html" class="text-design">Igre</a>
             </div>
 
-            <!-- Dropdown Other -->
+            <!-- Spustni meni Drugo -->
             <div class="dropdown_other">
-                <a href="../web/journal.html" class="text-design">Journal</a>
-                <a href="../web/media.html" class="text-design">Media</a>
-                <a href="../web/resume.html" class="text-design">Resume</a>
-                <a href="../web/skills-tools.html" class="text-design">Skills & Tools</a>
-                <a href="../web/process.html" class="text-design">Process</a>
+                <a href="../web/journal.html" class="text-design">Dnevnik</a>
+                <a href="../web/media.html" class="text-design">Mediji</a>
+                <a href="../web/resume.html" class="text-design">Življenjepis</a>
+                <a href="../web/skills-tools.html" class="text-design">Znanja in Orodja</a>
+                <a href="../web/process.html" class="text-design">Proces</a>
             </div>
 
         </div>
     </div>
 
     <!-- ================================================= -->
-    <!-- Header 2-->
+    <!-- Glava 2 -->
     <header id="header-section-2">
         <div class="text-section">
-            <h1 class="super-title-design">Vsi Game projekti</h1>
-            <label class="subtitle-design">Lorem ipsum is just normal dummy text</label>
-            <a href="#" class="black-button click-effect"><button>Read more</button></a>
+            <h1 class="super-title-design">Vsi igralni projekti</h1>
+            <label class="subtitle-design">Lorem ipsum je zgolj običajen nadomestni tekst</label>
+            <a href="#" class="black-button click-effect"><button>Preberi več</button></a>
         </div>
     </header>
 
     <!-- ================================================= -->
-    <!-- Projects -->
+    <!-- Projekti -->
     <div id="projects">
         <div id="project-section" class="text-appear-2">
             <div class="image-bg">
-                <img src="../static/image/shapes/blue-shape.jpg">
+                <img src="../static/image/Projects/Game/Space Game.png">
             </div>
             <section class="text-section">
-                <h1 class="title-design">HistoryGo</h1>
-                <label class="subtitle-design">HistoryGo is your digital passport to the past. Whether you're a history buff, a cultural explorer, or just someone planning your next big trip, HistoryGo helps you discover the most historically rich places in any country around the world.</label>
-            </section>
-    
-            <section class="button-section" style="margin-top: 50px;">
-                <a href="https://github.com/sharky-2/HistoryGo" target="_blank" class="gray-button click-effect">
-                    <button>raziskuj več</button>
-                    <img src="../static/image/icon/right-arrow.png">
-                </a>
-            </section>
-
-            <!-- ================================================= -->
-            <!-- Accordion -->
-            <div id="accordion-list" style="margin-top: 50px;">
-                <div class="item">
-                    <div class="question">
-                        <label class="text text-design">Kreativni projekti</label>
-                        <div class="dropdown">></div>
-                    </div>
-                    <div class="answer text-design">Opis kreativnih projektov in idej, ki jih ustvarjaš za zabavo, kot so igre, umetniške kreacije in drugo.</div>
-                    <img class="answer" src="../static/image/shapes/blue-shape.jpg">
-                </div>
-                <div class="item">
-                    <div class="question">
-                        <label class="text text-design">Chrome razširitve</label>
-                        <div class="dropdown">></div>
-                    </div>
-                    <div class="answer text-design">Razvijanje Chrome razširitev za izboljšanje vsakodnevne uporabniške izkušnje ali povečanje produktivnosti.</div>
-                </div>
-                <div class="item">
-                    <div class="question">
-                        <label class="text text-design">Šolski projekti</label>
-                        <div class="dropdown">></div>
-                    </div>
-                    <div class="answer text-design">Projekti, ki jih ustvarjaš za šolo, kot so naloge, predstavitve ali učni materiali.</div>
-                </div>
-                <div class="item">
-                    <div class="question">
-                        <label class="text text-design">Zabavni projekti</label>
-                        <div class="dropdown">></div>
-                    </div>
-                    <div class="answer text-design">Razvijanje zabavnih projektov, kot so igre ali aplikacije, ki so namenjene sprostitvi in zabavi.</div>
-                    <img class="answer" src="../static/image/shapes/Gray-shape.jpg">
-                </div>
-            </div>
-
-            <!-- ================================================= -->
-            <!-- Card Grid -->
-            <div id="card-grid" style="
-                height: 450px;
-                margin-top: 50px;
-                margin-left: 76px;
-            ">
-                <section class="card-section">
-                    <div class="card-bg">
-                        <h1 class="title-design">Python</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-
-                    <div class="card-bg">
-                        <h1 class="title-design">HTML&CSS</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-
-                    <div class="card-bg">
-                        <h1 class="title-design">JavaScript</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-
-                    <div class="card-bg">
-                        <h1 class="title-design">Json</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-                </section>
-            </div>
-
-        </div>
-
-        <div id="project-section" class="text-appear-2">
-            <div class="image-bg">
-                <img src="../static/image/shapes/orange-shape.jpg">
-            </div>
-            <section class="text-section">
-                <h1 class="title-design">HistoryGo</h1>
-                <label class="subtitle-design">HistoryGo is your digital passport to the past. Whether you're a history buff, a cultural explorer, or just someone planning your next big trip, HistoryGo helps you discover the most historically rich places in any country around the world.</label>
-            </section>
-
-            <h1 class="subtitle-design">More</h1>
-            <label class="subtitle-design">HistoryGo is your digital passport to the past. Whether you're a history buff, a cultural explorer, or just someone planning your next big trip, HistoryGo helps you discover the most historically rich places in any country around the world.</label>
-            <br><label class="subtitle-design">HistoryGo is your digital passport to the past. Whether you're a history buff, a cultural explorer, or just someone planning your next big trip, HistoryGo helps you discover the most historically rich places in any country around the world.</label>
-            
-            <!-- ================================================= -->
-            <!-- Card Grid -->
-            <div id="card-grid" style="
-                height: 450px;
-                margin-top: 50px;
-                margin-left: 76px;
-            ">
-                <section class="card-section">
-                    <div class="card-bg">
-                        <h1 class="title-design">Python</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-
-                    <div class="card-bg">
-                        <h1 class="title-design">HTML&CSS</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-
-                    <div class="card-bg">
-                        <h1 class="title-design">JavaScript</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-
-                    <div class="card-bg">
-                        <h1 class="title-design">Json</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-                </section>
-            </div>
-
-            <section class="button-section" style="margin-top: 50px;">
-                <a href="https://github.com/sharky-2/HistoryGo" target="_blank" class="gray-button click-effect">
-                    <button>raziskuj več</button>
-                    <img src="../static/image/icon/right-arrow.png">
-                </a>
+                <h1 class="title-design">Space Game</h1>
+                <label class="subtitle-design">Odprto svetu igra, kjer raziskuješ okoli ladje in poskušaš popraviti, da lahko greš domov. Raziskuj druge planete za vire. Samostojna igra, kjer te pojo pošasti.</label>
             </section>
         </div>
 
         <div id="project-section" class="text-appear-2">
             <div class="image-bg">
-                <img src="../static/image/shapes/Purple-shape.jpg">
+                <img src="../static/image/Projects/Game/plane-lia.jpg">
             </div>
             <section class="text-section">
-                <h1 class="title-design">HistoryGo</h1>
-                <label class="subtitle-design">HistoryGo is your digital passport to the past. Whether you're a history buff, a cultural explorer, or just someone planning your next big trip, HistoryGo helps you discover the most historically rich places in any country around the world.</label>
+                <h1 class="title-design">Letalo</h1>
+                <label class="subtitle-design">Realistična fizika za letalo.</label>
             </section>
-
-            <h1 class="subtitle-design">More</h1>
-            <label class="subtitle-design">HistoryGo is your digital passport to the past. Whether you're a history buff, a cultural explorer, or just someone planning your next big trip, HistoryGo helps you discover the most historically rich places in any country around the world.</label>
-            <br><label class="subtitle-design">HistoryGo is your digital passport to the past. Whether you're a history buff, a cultural explorer, or just someone planning your next big trip, HistoryGo helps you discover the most historically rich places in any country around the world.</label>
-    
-            <section class="button-section" style="margin-top: 50px;">
-                <a href="https://github.com/sharky-2/HistoryGo" target="_blank" class="gray-button click-effect">
-                    <button>raziskuj več</button>
-                    <img src="../static/image/icon/right-arrow.png">
-                </a>
-            </section>
-        </div>
-
-        <div id="project-section" class="text-appear-2">
-            <div class="image-bg">
-                <img src="../static/image/shapes/Gray-shape.jpg">
-            </div>
-            <section class="text-section">
-                <h1 class="title-design">HistoryGo</h1>
-                <label class="subtitle-design">HistoryGo is your digital passport to the past. Whether you're a history buff, a cultural explorer, or just someone planning your next big trip, HistoryGo helps you discover the most historically rich places in any country around the world.</label>
-            </section>
-
-            <h1 class="subtitle-design">More</h1>
-            <label class="subtitle-design">HistoryGo is your digital passport to the past. Whether you're a history buff, a cultural explorer, or just someone planning your next big trip, HistoryGo helps you discover the most historically rich places in any country around the world.</label>
-            <br><label class="subtitle-design">HistoryGo is your digital passport to the past. Whether you're a history buff, a cultural explorer, or just someone planning your next big trip, HistoryGo helps you discover the most historically rich places in any country around the world.</label>
-            
-            <!-- ================================================= -->
-            <!-- Card Grid -->
-            <div id="card-grid" style="
-                height: 450px;
-                margin-top: 50px;
-                margin-left: 76px;
-            ">
-                <section class="card-section">
-                    <div class="card-bg">
-                        <h1 class="title-design">Python</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-
-                    <div class="card-bg">
-                        <h1 class="title-design">HTML&CSS</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-
-                    <div class="card-bg">
-                        <h1 class="title-design">JavaScript</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-
-                    <div class="card-bg">
-                        <h1 class="title-design">Json</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-                </section>
-            </div>
-    
-            <section class="button-section" style="margin-top: 50px;">
-                <a href="https://github.com/sharky-2/HistoryGo" target="_blank" class="gray-button click-effect">
-                    <button>raziskuj več</button>
-                    <img src="../static/image/icon/right-arrow.png">
-                </a>
-            </section>
-        </div>
-
-        <div id="project-section" class="text-appear-2">
-            <div class="image-bg">
-                <img src="../static/image/shapes/Purple-shape.jpg">
-            </div>
-            <section class="text-section">
-                <h1 class="title-design">HistoryGo</h1>
-                <label class="subtitle-design">HistoryGo is your digital passport to the past. Whether you're a history buff, a cultural explorer, or just someone planning your next big trip, HistoryGo helps you discover the most historically rich places in any country around the world.</label>
-            </section>
-    
-            <section class="button-section" style="margin-top: 50px;">
-                <a href="https://github.com/sharky-2/HistoryGo" target="_blank" class="gray-button click-effect">
-                    <button>raziskuj več</button>
-                    <img src="../static/image/icon/right-arrow.png">
-                </a>
-            </section>
-
-            <!-- ================================================= -->
-            <!-- Accordion -->
-            <div id="accordion-list" style="margin-top: 50px;">
-                <div class="item">
-                    <div class="question">
-                        <label class="text text-design">Kreativni projekti</label>
-                        <div class="dropdown">></div>
-                    </div>
-                    <div class="answer text-design">Opis kreativnih projektov in idej, ki jih ustvarjaš za zabavo, kot so igre, umetniške kreacije in drugo.</div>
-                    <img class="answer" src="../static/image/shapes/blue-shape.jpg">
-                </div>
-                <div class="item">
-                    <div class="question">
-                        <label class="text text-design">Chrome razširitve</label>
-                        <div class="dropdown">></div>
-                    </div>
-                    <div class="answer text-design">Razvijanje Chrome razširitev za izboljšanje vsakodnevne uporabniške izkušnje ali povečanje produktivnosti.</div>
-                </div>
-                <div class="item">
-                    <div class="question">
-                        <label class="text text-design">Šolski projekti</label>
-                        <div class="dropdown">></div>
-                    </div>
-                    <div class="answer text-design">Projekti, ki jih ustvarjaš za šolo, kot so naloge, predstavitve ali učni materiali.</div>
-                </div>
-                <div class="item">
-                    <div class="question">
-                        <label class="text text-design">Zabavni projekti</label>
-                        <div class="dropdown">></div>
-                    </div>
-                    <div class="answer text-design">Razvijanje zabavnih projektov, kot so igre ali aplikacije, ki so namenjene sprostitvi in zabavi.</div>
-                    <img class="answer" src="../static/image/shapes/Gray-shape.jpg">
-                </div>
-            </div>
-            
-            <h1 class="subtitle-design">More</h1>
-            <label class="subtitle-design">HistoryGo is your digital passport to the past. Whether you're a history buff, a cultural explorer, or just someone planning your next big trip, HistoryGo helps you discover the most historically rich places in any country around the world.</label>
-            <br><label class="subtitle-design">HistoryGo is your digital passport to the past. Whether you're a history buff, a cultural explorer, or just someone planning your next big trip, HistoryGo helps you discover the most historically rich places in any country around the world.</label>
-            
-            <!-- ================================================= -->
-            <!-- Card Grid -->
-            <div id="card-grid" style="
-                height: 450px;
-                margin-top: 50px;
-                margin-left: 76px;
-            ">
-                <section class="card-section">
-                    <div class="card-bg">
-                        <h1 class="title-design">Python</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-
-                    <div class="card-bg">
-                        <h1 class="title-design">HTML&CSS</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-
-                    <div class="card-bg">
-                        <h1 class="title-design">JavaScript</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-
-                    <div class="card-bg">
-                        <h1 class="title-design">Json</h1>
-                        <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-                    </div>
-                </section>
-            </div>
         </div>
     </div>
 
     
     <!-- ================================================= -->
-    <!-- Footer -->
+    <!-- Noga -->
     <footer>
         <div class="left">
             <h1 class="subtitle-design">Kontakt</h1>

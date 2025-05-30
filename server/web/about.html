@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfelj</title>
 
     <link rel="stylesheet" href="../static/css/design.css">
     <link rel="stylesheet" href="../static/css/style.css">
@@ -12,7 +12,7 @@
 <body>
 
     <!-- ================================================= -->
-    <!-- Menu -->
+    <!-- Meni -->
     <div id="menu-section">
         <div class="menu">
             <img src="../static/image/shapes/blue-shape.jpg" style="border-radius: 100px;">
@@ -20,178 +20,184 @@
             <a href="../web/about.html"> <input type="button" value="O meni"> </a>
 
             <input type="button" value="Projekti" onclick="toggleDropdown_Projects()">
-            <input type="button" value="Other" onclick="toggleDropdown_Other()">
+            <input type="button" value="Ostalo" onclick="toggleDropdown_Other()">
             <a href="../web/contact.html"> <input type="button" value="Kontakt"> </a>
-            
         </div>
         <div class="dropdown-section">
-
-            <!-- Dropdown Projects -->
+            <!-- Dropdown Projekti -->
             <div class="dropdown_projects">
-                <a href="../web/projects.html" class="text-design">All</a>
-                <a href="../web/web-projects.html" class="text-design">Web</a>
-                <a href="../web/game-projects.html" class="text-design">Game</a>
+                <a href="../web/projects.html" class="text-design">Vsi</a>
+                <a href="../web/web-projects.html" class="text-design">Spletni</a>
+                <a href="../web/game-projects.html" class="text-design">Igre</a>
             </div>
 
-            <!-- Dropdown Other -->
+            <!-- Dropdown Ostalo -->
             <div class="dropdown_other">
-                <a href="../web/journal.html" class="text-design">Journal</a>
-                <a href="../web/media.html" class="text-design">Media</a>
-                <a href="../web/resume.html" class="text-design">Resume</a>
-                <a href="../web/skills-tools.html" class="text-design">Skills & Tools</a>
-                <a href="../web/process.html" class="text-design">Process</a>
+                <a href="../web/journal.html" class="text-design">Dnevnik</a>
+                <a href="../web/media.html" class="text-design">Mediji</a>
+                <a href="../web/resume.html" class="text-design">Življenjepis</a>
+                <a href="../web/skills-tools.html" class="text-design">Veščine in orodja</a>
+                <a href="../web/process.html" class="text-design">Proces</a>
             </div>
-
         </div>
     </div>
 
     <!-- ================================================= -->
-    <!-- Header 2-->
+    <!-- Glava -->
     <header id="header-section-2">
         <div class="text-section">
-            <h1 class="super-title-design">o meni, kaj delam?</h1>
-            <label class="subtitle-design">Lorem ipsum is just normal dummy text</label>
-            <a href="#" class="black-button click-effect"><button>Read more</button></a>
+            <h1 class="super-title-design">O meni, kaj delam?</h1>
+            <label class="subtitle-design">Spoznaj me in moje delo</label>
+            <a href="#" class="black-button click-effect"><button>Preberi več</button></a>
         </div>
     </header>
 
     <!-- ================================================= -->
-    <!-- About -->
+    <!-- O meni -->
     <div id="about-section">
         <section class="text-section">
             <h1 class="title-design">O meni</h1>
-            <label class="text-design text-appear">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptate ea iste dolores tenetur quas magni recusandae blanditiis fugit. Velit nemo similique laborum ut. Ullam corrupti itaque dignissimos veritatis reiciendis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptate ea iste dolores tenetur quas magni recusandae blanditiis fugit. Velit nemo similique laborum ut. Ullam corrupti itaque dignissimos veritatis reiciendis!</label>
-            
-            <br><label class="text-design text-appear">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptate ea iste dolores tenetur quas magni recusandae blanditiis fugit. Velit nemo similique laborum ut. Ullam corrupti itaque dignissimos veritatis reiciendis! Lorem ipsum dolor, sit amet consectetur adipisicing elit.</label>
+            <label class="text-design text-appear">
+                Sem dijak Srednje tehnične šole (STŠ), kjer se izobražujem na področju programiranja. V prostem času dodatno razvijam svoje znanje in raziskujem različne programske jezike. Navdušuje me tudi ustvarjanje v Blenderju, kjer združujem svojo ustvarjalnost s tehničnim znanjem.
+            </label>
+
+            <br><label class="text-design text-appear">
+                Rad raziskujem nove tehnologije in ustvarjam projekte, ki mi omogočajo osebno in strokovno rast – tako na tehničnem kot na ustvarjalnem področju.
+            </label>
         </section>
 
         <section class="image-section text-appear" style="text-align: center;">
             <div class="image-bg">
-                <img src="../static/image/shapes/blue-shape.jpg">
-                <label class="hand-writing-design">Modeling</label>
+                <img src="../static/image/Projects/Blender/Astronaut.jpg">
+                <label class="hand-writing-design">Animacija</label>
             </div>
             <div class="image-bg">
-                <img src="../static/image/shapes/orange-shape.jpg">
-                <label class="hand-writing-design">Programming</label>
+                <img src="../static/image/Projects/Game/plane-lia.jpg">
+                <label class="hand-writing-design">Letalo</label>
             </div>
         </section>
     </div>
 
     <!-- ================================================= -->
-    <!-- Accordion -->
+    <!-- Akordeon -->
     <div id="accordion-list">
         <div class="item">
             <div class="question">
                 <label class="text text-design">Kreativni projekti</label>
                 <div class="dropdown">></div>
             </div>
-            <div class="answer text-design">Opis kreativnih projektov in idej, ki jih ustvarjaš za zabavo, kot so igre, umetniške kreacije in drugo.</div>
-            <img class="answer" src="../static/image/shapes/blue-shape.jpg">
+            <div class="answer text-design">Opis kreativnih projektov in idej, ki jih ustvarjam za zabavo, kot so igre, umetniške kreacije in drugo.</div>
+            <img class="answer" src="../static/image/Projects/Blender/Frog.jpg">
         </div>
         <div class="item">
             <div class="question">
                 <label class="text text-design">Chrome razširitve</label>
                 <div class="dropdown">></div>
             </div>
-            <div class="answer text-design">Razvijanje Chrome razširitev za izboljšanje vsakodnevne uporabniške izkušnje ali povečanje produktivnosti.</div>
+            <div class="answer text-design">Razvijam Chrome razširitve za izboljšanje vsakodnevne uporabniške izkušnje in povečanje produktivnosti.</div>
         </div>
         <div class="item">
             <div class="question">
                 <label class="text text-design">Šolski projekti</label>
                 <div class="dropdown">></div>
             </div>
-            <div class="answer text-design">Projekti, ki jih ustvarjaš za šolo, kot so naloge, predstavitve ali učni materiali.</div>
-            <img class="answer" src="../static/image/shapes/Purple-shape.jpg">
+            <div class="answer text-design">Projekti, ki jih ustvarjam v šoli, kot so naloge, predstavitve in učni materiali.</div>
+            <img class="answer" src="../static/image/Projects/Game/plane-lia.jpg">
         </div>
         <div class="item">
             <div class="question">
                 <label class="text text-design">Zabavni projekti</label>
                 <div class="dropdown">></div>
             </div>
-            <div class="answer text-design">Razvijanje zabavnih projektov, kot so igre ali aplikacije, ki so namenjene sprostitvi in zabavi.</div>
+            <div class="answer text-design">Razvijam igre in aplikacije, ki so namenjene sprostitvi in zabavi.</div>
         </div>
     </div>
 
-     <!-- ================================================= -->
-    <!-- Text -->
+    <!-- ================================================= -->
+    <!-- Besedilo -->
     <div id="about-section" class="top-bottom-border">
         <section class="text-section">
-            <h1 class="title-design">Text</h1>
-            <label class="text-design text-appear">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptate ea iste dolores tenetur quas magni recusandae blanditiis fugit. Velit nemo similique laborum ut. Ullam corrupti itaque dignissimos veritatis reiciendis! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptate ea iste dolores tenetur quas magni recusandae blanditiis fugit. Velit nemo similique laborum ut. Ullam corrupti itaque dignissimos veritatis reiciendis!</label>
-            
-            <br><label class="text-design text-appear">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptate ea iste dolores tenetur quas magni recusandae blanditiis fugit. Velit nemo similique laborum ut. Ullam corrupti itaque dignissimos veritatis reiciendis! Lorem ipsum dolor, sit amet consectetur adipisicing elit.</label>
-            <br><label class="text-design text-appear">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptate ea iste dolores tenetur quas magni recusandae blanditiis fugit. Velit nemo similique laborum ut. Ullam corrupti itaque dignissimos veritatis reiciendis! Lorem ipsum dolor, sit amet consectetur adipisicing elit.</label>
-            <br><label class="text-design text-appear">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Explicabo voluptate ea iste dolores tenetur quas magni recusandae blanditiis fugit. Velit nemo similique laborum ut. Ullam corrupti itaque dignissimos veritatis reiciendis! Lorem ipsum dolor, sit amet consectetur adipisicing elit.</label>
+            <h1 class="title-design">Besedilo</h1>
+            <label class="text-design text-appear">
+                Tu si lahko ogledaš več o meni, mojem pristopu k delu in mojih interesih. Vključujem kombinacijo ustvarjalnosti in tehničnih znanj v vseh projektih.
+            </label>
+            <br><label class="text-design text-appear">
+                Neprenehoma se učim in raziskujem nove tehnologije. Vsak projekt je priložnost za rast.
+            </label>
+            <br><label class="text-design text-appear">
+                Pri delu rad povezujem estetiko z uporabnostjo – to velja tako za spletne strani kot igre.
+            </label>
+            <br><label class="text-design text-appear">
+                Vsak korak v razvoju projekta mi prinaša novo znanje in izkušnje, ki jih rad delim z drugimi.
+            </label>
         </section>
     </div>
 
     <!-- ================================================= -->
-    <!-- Title -->
+    <!-- Naslov -->
     <div id="title-section">
-        <h1 class="title-design">Programming Lenguages I work with</h1>
-        <label class="subtitle-design">All programming lenguages I use when i work on projects</label>
+        <h1 class="title-design">Programski jeziki, s katerimi delam</h1>
+        <label class="subtitle-design">Jeziki, ki jih uporabljam pri razvoju projektov</label>
     </div>
 
     <!-- ================================================= -->
-    <!-- Card Grid -->
+    <!-- Kartice -->
     <div id="card-grid">
         <section class="card-section">
             <div class="card-bg">
                 <h1 class="title-design">Python</h1>
-                <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
+                <label class="subtitle-design">Uporaben za avtomatizacijo, igre, analizo podatkov in še več.</label>
             </div>
 
             <div class="card-bg">
-                <h1 class="title-design">HTML&CSS</h1>
-                <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
+                <h1 class="title-design">HTML & CSS</h1>
+                <label class="subtitle-design">Osnova za izdelavo spletnih strani in oblikovanje vsebin.</label>
             </div>
 
             <div class="card-bg">
                 <h1 class="title-design">GDScript</h1>
-                <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
+                <label class="subtitle-design">Programski jezik v Godotu, primeren za razvoj iger.</label>
             </div>
 
             <div class="card-bg">
                 <h1 class="title-design">C</h1>
-                <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
-            </div>
-
-            <!-- Next row -->
-            <div class="card-bg">
-                <h1 class="title-design">MySql</h1>
-                <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
+                <label class="subtitle-design">Osnoven in zmogljiv jezik za razvoj sistemske programske opreme.</label>
             </div>
 
             <div class="card-bg">
-                <h1 class="title-design">Php</h1>
-                <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
+                <h1 class="title-design">MySQL</h1>
+                <label class="subtitle-design">Za delo z bazami podatkov pri spletnih aplikacijah.</label>
+            </div>
+
+            <div class="card-bg">
+                <h1 class="title-design">PHP</h1>
+                <label class="subtitle-design">Strežniški jezik za dinamične spletne strani.</label>
             </div>
 
             <div class="card-bg">
                 <h1 class="title-design">Lua</h1>
-                <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
+                <label class="subtitle-design">Lahek jezik, ki se pogosto uporablja v igrah.</label>
             </div>
 
             <div class="card-bg">
                 <h1 class="title-design">JavaScript</h1>
-                <label class="subtitle-design">Lorem ipsum is just normal dummy text used in news papers and other medias.</label>
+                <label class="subtitle-design">Ključen za interaktivnost na spletnih straneh.</label>
             </div>
         </section>
     </div>
 
     <!-- ================================================= -->
-    <!-- Table -->
+    <!-- Tabela izkušenj -->
     <div id="experience-section">
         <h1 class="title-design">Delovne izkušnje</h1>
         <section class="text-table">
 
-            <!-- Programming engine -->
             <div class="line text-appear">
                 <div class="left">
                     <h1 class="subtitle-design">Orodje</h1>
                 </div>
                 <div class="right">
-                    <label class="text">Programirni okolje</label> 
+                    <label class="text">Programsko okolje</label> 
                     <label class="rank rank-blue">
                         <img src="../static/image/icon/Vs-code.png">
                         VS Code
@@ -199,13 +205,12 @@
                 </div>
             </div>
 
-            <!-- Design -->
             <div class="line text-appear">
                 <div class="left">
                     <h1 class="subtitle-design">Oblikovanje</h1>
                 </div>
                 <div class="right">
-                    <label class="text">Oblikovanje spletnih strani / modulov</label> 
+                    <label class="text">Oblikovanje spletnih strani in modulov</label> 
                     <label class="rank rank-orange">
                         <img src="../static/image/icon/figma.webp">
                         Figma
@@ -213,16 +218,15 @@
                 </div>
             </div>
 
-            <!-- Learning -->
             <div class="line text-appear">
                 <div class="left">
                     <h1 class="subtitle-design">Učenje</h1>
                 </div>
                 <div class="right">
-                    <label class="text">w3school / gpt / youtube / github</label> 
+                    <label class="text">w3schools / ChatGPT / YouTube / GitHub</label> 
                     <label class="rank rank-gray">
                         <img src="../static/image/icon/tips.png">
-                        Učenje
+                        Samoučenje
                     </label>
                 </div>
             </div>
@@ -231,7 +235,7 @@
     </div>
 
     <!-- ================================================= -->
-    <!-- Footer -->
+    <!-- Noga -->
     <footer>
         <div class="left">
             <h1 class="subtitle-design">Kontakt</h1>
@@ -239,10 +243,10 @@
             <label class="text-design">30 300 300 300</label> 
         </div>
         <div class="middle">
-            <h1 class="subtitle-design">Delam</h1>
+            <h1 class="subtitle-design">Kaj delam</h1>
             <label class="text-design">Spletne strani</label>
-            <label class="text-design">3D / 2D igrice</label>
-            <label class="text-design">Zabavne programe</label>
+            <label class="text-design">3D / 2D igre</label>
+            <label class="text-design">Zabavni programi</label>
             <label class="text-design">In še več</label>
         </div>
         <div class="right">
@@ -250,7 +254,6 @@
             <a href="https://github.com/sharky-2" target="_blank"> <label class="text-design">GitHub</label> </a>
         </div>
     </footer>
-    
 
     <script src="../static/script/script.js"></script>
 </body>
