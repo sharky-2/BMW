@@ -5,7 +5,10 @@
     /* ================================================= */
     /* Colors */
     --primary-bg-color: #FFFFFF;
-    --primary-text-color: #1A1A1A;
+    --primary-text-color: #00051b;
+
+    /* --primary-bg-color: #00051b;
+    --primary-text-color: #FFFFFF; */
 
     --dark-white: #F6F6F6;
     --gray: #B8B8B8;
@@ -18,4 +21,4 @@
     --text-font: "Roboto";
     --hand-writing-font: "Kaushan Script";
 
-}
+}  

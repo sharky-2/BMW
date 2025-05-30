@@ -171,6 +171,7 @@
     position: relative;
 }
 .image-section .image-bg {
+    color: var(--primary-text-color);
     border-radius: 40px;
     width: 350px;
     height: 400px;
