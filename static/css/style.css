@@ -133,11 +133,11 @@
     background: var(--black);
 }
 #container-landing-page .left {
-    background: url("../images/asset/image-2.jpg") no-repeat 50% 50%;
+    background: url("../images/bmw/alex-dorcioman-Mlxqo9b0J4A-unsplash.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 #container-landing-page .right {
-    background: url("../images/asset/image-3.jpg") no-repeat 50% 50%;
+    background: url("../images/bmw/alex-mares-HNIykmIJDzg-unsplash.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 #container-landing-page p {
@@ -220,13 +220,13 @@
 #container-scroll-service .hero {
     width: 100vw;
     height: 500px;
-    background: url("../images/asset/image-1.jpg") no-repeat 50% 50%;
+    background: url("../images/bmw/jakob-rosen-rC1Llibcis0-unsplash.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 #container-scroll-service .footer {
     width: 100vw;
     height: 500px;
-    background: url("../images/asset/image-2.jpg") no-repeat 50% 50%;
+    background: url("../images/bmw/mattia-righetti-Nz0D8aN5Kw0-unsplash.jpg") no-repeat 50% 50%;
     background-size: cover;
 }
 #container-scroll-service .services {
@@ -335,13 +335,12 @@
 /* ================================================= */
 /* Accordion */
 #accordion-list {
-    width: 60%;
+    width: 87vw;
     display: block;
     height: fit-content;
 }
 #accordion-list .item {
     padding-bottom: 20px;
-    padding-inline: 20px;
     width: 100%;
     
     border-bottom: 1px solid var(--black);
@@ -584,4 +583,100 @@
 }
 #container-shuffel .w1 {
     text-align: right;
+}
+
+/* ================================================= */
+/* Gallery */
+#image-gallery {
+    width: 100%;
+    height: 100vh;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-self: center;
+
+    overflow: hidden;
+
+    margin-top: 50px;
+}
+#image-gallery .row {
+    height: fit-content;
+    width: 30%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+#image-gallery .row img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+#image-gallery .row:nth-child(odd) {
+    animation: row-odd 10s infinite alternate;
+}
+#image-gallery .row:nth-child(even) {
+    animation: row-even 10s infinite alternate;
+    transform: translateY(-25%);
+}
+@keyframes row-odd {
+    to {transform: translateY(-25%);}
+}
+@keyframes row-even {
+    to {transform: translateY(0%);}
+}
+
+/* ====================================================== */
+/* Text */
+#text-section {
+    width: 90vw;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 50px;
+
+    padding-inline: 50px;
+}
+
+#text-section h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#text-section label {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    max-width: 900px;
+}
+
+#text-section .table {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#text-section .table .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    border-bottom: 1px solid var(--black);
+    padding: 15px 0;
+}
+
+#text-section .table .row span {
+    flex: 1;
+    min-width: 200px;
+    font-size: 1rem;
+}
+
+#text-section .table .row-1 span {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #333;
+    text-transform: uppercase;
 }
