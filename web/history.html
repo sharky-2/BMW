@@ -25,12 +25,12 @@
             </a>
 
             <!-- About -->
-            <a href="#" class="button">
+            <a href="about.html" class="button">
                 <img src="../static/images/icons/right-arrow.png">
                 <h1>o nas</h1>
             </a>
-            <a href="#" class="button sub-button">Življenjepis</a>
-            <a href="#" class="button sub-button">Rojstvo</a>
+            <a href="resume.html" class="button sub-button">Življenjepis</a>
+            <a href="birth.html" class="button sub-button">Rojstvo</a>
             <a onclick="menuFunction()" class="button sub-button">Zgodovina</a>
 
             <!-- Projects -->
@@ -56,7 +56,45 @@
         </section>
     </div>
 
-    <div id="text-section" style="margin-top: 150px;">
+    <!-- ================================================= -->
+    <!-- Shuffel Letter -->
+    <div id="container-shuffel">
+        <div class="item item-1">
+            <div class="word w1">Začetki</div>
+            <div class="img">
+                <img src="../static/images/bmw/1923.jpg" alt="BMW Začetki" />
+            </div>
+            <div class="word w2">Letalski motorji</div>
+        </div>
+
+        <div class="item item-2">
+            <div class="word w1">Motocikli</div>
+            <div class="img">
+                <img src="../static/images/bmw/196.jpg" alt="BMW Motocikli" />
+            </div>
+            <div class="word w2">Avtomobili</div>
+        </div>
+
+        <div class="item item-3">
+            <div class="word w1">Vojna</div>
+            <div class="img">
+                <img src="../static/images/bmw/2024.jpg" alt="BMW Vojna" />
+            </div>
+            <div class="word w2">Obnova</div>
+        </div>
+
+        <div class="item item-4">
+            <div class="word w1">Neue Klasse</div>
+            <div class="img">
+                <img src="../static/images/bmw/1972.jpg" alt="BMW Neue Klasse" />
+            </div>
+            <div class="word w2">Preboj</div>
+        </div>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Text -->
+    <div id="text-section">
         <div class="title">
             <h1>Zgodovina BMW</h1>
             <label>
@@ -123,6 +161,150 @@
         </div>
     </div>
 
+    <!-- ================================================= -->
+    <!-- Marquee Animation -->
+    <section class="spacer"></section>
+    <section id="marquee">
+        <div class="marquee__inner">
+            <div class="marquee__part">
+                BMW — Od 1916 do danes
+                <div class="arrow"><img src="../static/images/icons/right-arrow.png" alt="right arrow" /></div>
+            </div>
+
+            <div class="marquee__part">
+                Letalski motorji in tehnologija
+                <div class="arrow"><img src="../static/images/icons/right-arrow.png" alt="right arrow" /></div>
+            </div>
+
+            <div class="marquee__part">
+                Neue Klasse v 60. letih
+                <div class="arrow"><img src="../static/images/icons/right-arrow.png" alt="right arrow" /></div>
+            </div>
+
+            <div class="marquee__part">
+                Inovacije in luksuz
+                <div class="arrow"><img src="../static/images/icons/right-arrow.png" alt="right arrow" /></div>
+            </div>
+        </div>
+    </section>
+    <section class="spacer"></section>
+
+    <!-- ================================================= -->
+    <!-- Accordion -->
+    <div id="accordion-list">
+        <div class="item">
+            <div class="question">
+                <label class="text title-d">Zgodovina podjetja</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-d">
+                BMW je začel kot proizvajalec letalskih motorjev leta 1916. Po vojni je podjetje prešlo na motorje za motocikle in avtomobile ter skozi težka obdobja doseglo svetovni uspeh.
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="question">
+                <label class="text title-d">Pomembni mejniki</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-d">
+                Od predstavitve motocikla R32, preko modelov iz serije Neue Klasse, do sodobnih električnih vozil – BMW je vedno nastopal kot pionir na področju tehnologije in dizajna.
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="question">
+                <label class="text title-d">Vpliv na industrijo</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-d">
+                BMW je oblikoval standarde za zmogljivost, varnost in luksuz, obenem pa je s svojimi inovacijami močno vplival na razvoj avtomobilske industrije v Evropi in svetu.
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="question">
+                <label class="text title-d">Vizija za prihodnost</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-d">
+                BMW ostaja zavezan razvoju trajnostne mobilnosti in inovacij, ki bodo še naprej zagotavljale navdušujoče vozniške izkušnje in prispevale k varnejši in bolj zeleni prihodnosti.
+            </div>
+        </div>
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- Reveal Image -->
+    <div id="reveal-image">
+        <div class="counter"><p>0</p></div>
+        <div class="bg-color"></div>
+
+        <div class="items">
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/1916.jpg"></div>
+                <div class="item-info"><label>Ustanovitev BMW – 1916</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/1923.jpg"></div>
+                <div class="item-info"><label>Prvi motocikel – R32 (1923)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/1928.jpg"></div>
+                <div class="item-info"><label>Vstop v avtomobilsko industrijo – Dixi 3/15 (1928)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/1936.jpg"></div>
+                <div class="item-info"><label>BMW 328 – športna ikona iz 1936</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/1959.jpg"></div>
+                <div class="item-info"><label>Skorajšnji bankrot in preobrat – 1959</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/196.jpg"></div>
+                <div class="item-info"><label>Nova klasa – začetek moderne dobe (1962)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/1972.jpg"></div>
+                <div class="item-info"><label>BMW M GmbH – športni oddelek (1972)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/1994.jpg"></div>
+                <div class="item-info"><label>Rover Group – širitev v 90. letih (1994)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/2013.jpg"></div>
+                <div class="item-info"><label>BMW i – prihod električnih modelov (2013)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/2020.jpg"></div>
+                <div class="item-info"><label>Elektrifikacija in digitalizacija – iX, i4, i7 (2020–)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/2024.jpg"></div>
+                <div class="item-info"><label>Prihodnost mobilnosti – BMW in inovacije</label></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Footer -->
+    <footer>
+        <div class="link">
+            <span>BMW</span>
+            <span>Vozila</span>
+            <span style="margin-left: auto;">IN</span>
+            <span>FB</span>
+            <span>GH</span>
+        </div>
+        <label>BMW</label>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
     <script src="../static/script/script.js"></script>
+    <script src="../static/script/reveal-image.js"></script>
+    <script src="../static/script/shuffle.js"></script>
 </body>
 </html>

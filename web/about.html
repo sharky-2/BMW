@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O nas</title>
+
+    <link rel="stylesheet" href="../static/css/design.css" />
+    <link rel="stylesheet" href="../static/css/style.css" />
+    <link rel="stylesheet" href="../static/css/root.css" />
+</head>
+<body>
+    <!-- ================================================= -->
+    <!-- Menu -->
+    <div class="menu" id="menu">
+        <label class="menu-link" onclick="menuFunction()" style="cursor: pointer;">menu</label>
+
+        <section class="menu-section">
+            <!-- Home -->
+            <a href="../index.html" class="button">
+                <img src="../static/images/icons/right-arrow.png" />
+                <h1>domov</h1>
+            </a>
+
+            <!-- About -->
+            <a class="button">
+                <img src="../static/images/icons/right-arrow.png" />
+                <h1 onclick="menuFunction()">o nas</h1>
+            </a>
+            <a href="resume.html" class="button sub-button">Življenjepis</a>
+            <a href="birth.html" class="button sub-button">Rojstvo</a>
+            <a href="history.html" class="button sub-button">Zgodovina</a>
+
+            <!-- Projects -->
+            <a href="vehicles.html" class="button">
+                <img src="../static/images/icons/right-arrow.png" />
+                <h1>Vozila</h1>
+            </a>
+            <a href="#" class="button sub-button">Stari modeli</a>
+            <a href="#" class="button sub-button">Novi modeli</a>
+            <a href="#" class="button sub-button">Športni modeli</a>
+
+            <a href="#" class="button">
+                <img src="../static/images/icons/right-arrow.png" />
+                <h1>ostalo</h1>
+            </a>
+            <a href="journal.html" class="button sub-button">dnevnik</a>
+
+            <a href="#" class="button">
+                <img src="../static/images/icons/right-arrow.png" />
+                <h1>kontakt</h1>
+            </a>
+        </section>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Shuffel Letter -->
+    <div id="container-shuffel">
+        <div class="item item-1">
+            <div class="word w1">Inovacija</div>
+            <div class="img">
+                <img src="../static/images/bmw/alex-mares-HNIykmIJDzg-unsplash.jpg" alt="BMW Inovacija" />
+            </div>
+            <div class="word w2">Voznja</div>
+        </div>
+
+        <div class="item item-2">
+            <div class="word w1">Zmogleost</div>
+            <div class="img">
+                <img src="../static/images/bmw/asan-emirov-KjZWegJA8qw-unsplash.jpg" alt="BMW Zmogljivost" />
+            </div>
+            <div class="word w2">Natančnost</div>
+        </div>
+
+        <div class="item item-3">
+            <div class="word w1">Luksuz</div>
+            <div class="img">
+                <img src="../static/images/bmw/hans-m-94MzZ5p9PiE-unsplash.jpg" alt="BMW Luksuz" />
+            </div>
+            <div class="word w2">Udobje</div>
+        </div>
+
+        <div class="item item-4">
+            <div class="word w1">Oblikovanje</div>
+            <div class="img">
+                <img src="../static/images/bmw/martin-katler-94lAQc7ipNg-unsplash.jpg" alt="BMW Oblikovanje" />
+            </div>
+            <div class="word w2">Moč</div>
+        </div>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Text -->
+    <div id="text-section" style="margin-bottom: 50px;">
+        <div class="title">
+            <h1>O nas</h1>
+            <label>
+                Smo predana ekipa, ki združuje strast do avtomobilizma in inovacij. Naša vizija je ustvarjati vrhunske izdelke in storitve, ki bodo navdihnili voznike po vsem svetu.
+            </label>
+            <label>
+                Naše podjetje temelji na dolgoletnih izkušnjah, zavezanosti kakovosti in nenehnem razvoju. Verjamemo v trajnostne rešitve, ki prispevajo k boljšemu jutri.
+            </label>
+            <label>
+                Ponosni smo na svojo zgodovino, ki nas je oblikovala v zaupanja vrednega partnerja za vse avtomobilske navdušence. Naša ekipa je vedno pripravljena sprejeti nove izzive in preseči pričakovanja.
+            </label>
+            <label>
+                V sodelovanju z našimi strankami in partnerji gradimo prihodnost mobilnosti, ki temelji na inovacijah, tehnologiji in čustveni povezanosti z vožnjo.
+            </label>
+            <label>
+                Pridružite se nam na poti raziskovanja novih obzorij in soustvarjanja zgodbe, ki presega meje avtomobilizma.
+            </label>
+        </div>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Marquee Animation -->
+    <section class="spacer"></section>
+    <section id="marquee">
+        <div class="marquee__inner">
+            <div class="marquee__part">
+                BMW — The Ultimate Driving Machine
+                <div class="arrow"><img src="../static/images/icons/right-arrow.png" alt="right arrow" /></div>
+            </div>
+
+            <div class="marquee__part">
+                BMW Innovation & Performance
+                <div class="arrow"><img src="../static/images/icons/right-arrow.png" alt="right arrow" /></div>
+            </div>
+
+            <div class="marquee__part">
+                BMW Luxury & Engineering Excellence
+                <div class="arrow"><img src="../static/images/icons/right-arrow.png" alt="right arrow" /></div>
+            </div>
+
+            <div class="marquee__part">
+                BMW Driving Experience Redefined
+                <div class="arrow"><img src="../static/images/icons/right-arrow.png" alt="right arrow" /></div>
+            </div>
+        </div>
+    </section>
+    <section class="spacer"></section>
+
+    <!-- ================================================= -->
+    <!-- Accordion -->
+    <div id="accordion-list">
+        <div class="item">
+            <div class="question">
+                <label class="text title-d">Naša vizija</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-d">
+                Verjamemo v prihodnost mobilnosti, ki temelji na inovacijah, trajnosti in vrhunski uporabniški izkušnji. Naša vizija je oblikovati vozila, ki navdušujejo in povezujejo ljudi.
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="question">
+                <label class="text title-d">Naša ekipa</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-d">
+                Sestavljajo jo strokovnjaki z različnih področij, ki skupaj združujejo kreativnost, tehnično znanje in strast do avtomobilizma, da ustvarimo nekaj edinstvenega.
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="question">
+                <label class="text title-d">Družbena odgovornost</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-d">
+                Aktivno prispevamo k trajnostnemu razvoju in družbenim projektom, saj verjamemo, da lahko z našim delovanjem pozitivno vplivamo na skupnost in okolje.
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="question">
+                <label class="text title-d">Naše vrednote</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-d">
+                Kakovost, inovativnost, zanesljivost in strast do vozniške izkušnje so temelji, na katerih gradimo vse naše projekte in odnose s strankami.
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Image Gallery -->
+    <div id="image-gallery">
+        <div class="row row-1">
+            <img src="../static/images/bmw/alex-dorcioman-Mlxqo9b0J4A-unsplash.jpg" />
+            <img src="../static/images/bmw/alex-mares-HNIykmIJDzg-unsplash.jpg" />
+            <img src="../static/images/bmw/anton-jansson-of2CPjqcvEc-unsplash.jpg" />
+            <img src="../static/images/bmw/arteum-ro-KiTalJFRkcg-unsplash.jpg" />
+            <img src="../static/images/bmw/arteum-ro-KiTalJFRkcg-unsplash.jpg" />
+            <img src="../static/images/bmw/asan-emirov-KjZWegJA8qw-unsplash.jpg" />
+            <img src="../static/images/bmw/hans-m-94MzZ5p9PiE-unsplash.jpg" />
+            <img src="../static/images/bmw/luca-david-BV9rakxVvQQ-unsplash.jpg" />
+        </div>
+        <div class="row row-2">
+            <img src="../static/images/bmw/mattia-righetti-Nz0D8aN5Kw0-unsplash.jpg" />
+            <img src="../static/images/bmw/sanmeet-chahil-dveDkZQJVjQ-unsplash.jpg" />
+            <img src="../static/images/bmw/serjan-midili-yedYysaveC8-unsplash.jpg" />
+            <img src="../static/images/bmw/zan-lazarevic-1BWBiUUT-AA-unsplash.jpg" />
+            <img src="../static/images/bmw/joren-goessens-3HtpbdeZ_i8-unsplash.jpg" />
+            <img src="../static/images/bmw/roman-khripkov-PzCGId2ljsY-unsplash.jpg" />
+            <img src="../static/images/bmw/mattia-righetti-Nz0D8aN5Kw0-unsplash.jpg" />
+            <img src="../static/images/bmw/zan-lazarevic-1BWBiUUT-AA-unsplash.jpg" />
+        </div>
+        <div class="row row-3">
+            <img src="../static/images/bmw/asan-emirov-KjZWegJA8qw-unsplash.jpg" />
+            <img src="../static/images/bmw/roberto-nickson-zu95jkyrGtw-unsplash.jpg" />
+            <img src="../static/images/bmw/jonathan-daniels-sfqxNM2ugfc-unsplash.jpg" />
+            <img src="../static/images/bmw/josh-berquist-_4sWbzH5fp8-unsplash.jpg" />
+            <img src="../static/images/bmw/michael-jasmund-kR1u56bYces-unsplash.jpg" />
+            <img src="../static/images/bmw/mattia-righetti-Nz0D8aN5Kw0-unsplash.jpg" />
+            <img src="../static/images/bmw/michael-jasmund-kR1u56bYces-unsplash.jpg" />
+            <img src="../static/images/bmw/szymonek-pograniczny-cEFPNzhuzcQ-unsplash.jpg" />
+        </div>
+    </div>
+
+    <footer>
+        <div class="link">
+            <span>BMW</span>
+            <span>Vozila</span>
+            <span style="margin-left: auto;">IN</span>
+            <span>FB</span>
+            <span>GH</span>
+        </div>
+        <label>BMW</label>
+    </footer>
+
+    <script src="../static/script/script.js"></script>
+    <script src="../static/script/shuffle.js"></script>
+</body>
+</html>

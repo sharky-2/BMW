@@ -9,17 +9,12 @@
     <link rel="stylesheet" href="../static/css/style.css">
     <link rel="stylesheet" href="../static/css/root.css">    
 
-    
-    
 </head>
 <body class="projects">
 
     <!-- ================================================= -->
     <!-- Menu -->
-    <div class="menu" id="menu" style="
-        background-color: var(--black);
-        color: var(--white);
-    ">
+    <div class="menu" id="menu">
         <label class="menu-link" onclick="menuFunction()" style="cursor: pointer;">menu</label>
         
         <section class="menu-section">
@@ -31,12 +26,12 @@
             </a>
 
             <!-- About -->
-            <a href="#" class="button">
+            <a href="about.html" class="button">
                 <img src="../static/images/icons/right-arrow.png">
                 <h1>o nas</h1>
             </a>
-            <a href="#" class="button sub-button">Življenjepis</a>
-            <a href="#" class="button sub-button">Rojstvo</a>
+            <a href="resume.html" class="button sub-button">Življenjepis</a>
+            <a href="birth.html" class="button sub-button">Rojstvo</a>
             <a href="history.html" class="button sub-button">Zgodovina</a>
 
             <!-- Projects -->
@@ -61,17 +56,81 @@
             </a>
         </section>
     </div>
+
+    <!-- ================================================= -->
+    <!-- Shuffel Letter -->
+    <div id="container-shuffel" style="background-color: var(--white);">
+        <div class="item item-1">
+            <div class="word w1">Inovacija</div>
+            <div class="img">
+                <img src="../static/images/bmw/1994.jpg" alt="BMW Inovacija" />
+            </div>
+            <div class="word w2">Napredek</div>
+        </div>
+
+        <div class="item item-2">
+            <div class="word w1">Zmogleost</div>
+            <div class="img">
+                <img src="../static/images/bmw/1923.jpg" alt="BMW Zmogljivost" />
+            </div>
+            <div class="word w2">Natančnost</div>
+        </div>
+
+        <div class="item item-3">
+            <div class="word w1">Luksuz</div>
+            <div class="img">
+                <img src="../static/images/bmw/josh-berquist-_4sWbzH5fp8-unsplash.jpg" alt="BMW Luksuz" />
+            </div>
+            <div class="word w2">Udobje</div>
+        </div>
+
+        <div class="item item-4">
+            <div class="word w1">Oblikovanje</div>
+            <div class="img">
+                <img src="../static/images/bmw/hayes-potter-teTQy_ObjXs-unsplash.jpg" alt="BMW Oblikovanje" />
+            </div>
+            <div class="word w2">Moč</div>
+        </div>
+    </div>
+
+
+    <div id="text-section" style="
+        margin-bottom: 50px;
+        background-color: var(--white);
+        width: 100%;
+        padding: 50px;
+        margin-top: -50px;
+    ">
+        <div class="title">
+            <h1>Naša vozila</h1>
+            <label>
+                Vsako naše vozilo združuje vrhunsko tehnologijo, izjemno zmogljivost in prefinjen dizajn, ki skupaj ustvarjajo nepozabno izkušnjo vožnje.
+            </label>
+            <label>
+                Ponosni smo na inovativne rešitve, ki izboljšujejo varnost in učinkovitost, ter na motorje, ki nudijo močan in hkrati odziven pospešek.
+            </label>
+            <label>
+                Notranjost vozil je oblikovana z mislijo na luksuz in udobje, saj verjamemo, da mora biti vsak trenutek za volanom prijeten in sproščujoč.
+            </label>
+            <label>
+                Estetsko dovršeno oblikovanje naših avtomobilov ne izstopa le z elegantnimi linijami, ampak tudi s funkcionalnostjo, ki zagotavlja optimalno aerodinamiko in vozno dinamiko.
+            </label>
+            <label>
+                Zavezani smo k trajnostnim rešitvam, ki pripomorejo k bolj čisti prihodnosti, ne da bi pri tem ogrozili užitek v vožnji.
+            </label>
+        </div>
+    </div>
+
     
     <div id="slider-projects" class="slider">
 
         <div class="slide-titles">
-            <div class="title"><h1>Overview of Key Concepts</h1></div>
-            <div class="title"><h1>Understanding the Basics</h1></div>
-            <div class="title"><h1>Exploring New Ideas</h1></div>
-            <div class="title"><h1>Detailed Analysis</h1></div>
-            <div class="title"><h1>Case Studies</h1></div>
-            <div class="title"><h1>Future Directions</h1></div>
-            <div class="title"><h1>Conclusion and Summary</h1></div>
+            <div class="title"><h1>BMW Serija 3</h1></div>
+            <div class="title"><h1>BMW X5</h1></div>
+            <div class="title"><h1>BMW i8</h1></div>
+            <div class="title"><h1>BMW Serija 7</h1></div>
+            <div class="title"><h1>BMW M4</h1></div>
+            <div class="title"><h1>BMW Z4</h1></div>
         </div>
 
         <div class="slide-images">
@@ -79,9 +138,76 @@
             <div class="img-bottom"></div>
         </div>
     </div>
+
+    <!-- ================================================= -->
+    <!-- Text -->
+    <div id="text-section" style="
+        margin-bottom: 50px; 
+        background-color: var(--white); 
+        width: 100%; 
+        padding: 50px; 
+    ">
+        <div class="title">
+            <h1>BMW Serija 3</h1>
+            <label>
+            BMW Serija 3 je sinonim za dinamično vožnjo in športno eleganco. Z izjemno zmogljivostjo in napredno tehnologijo zagotavlja popolno ravnovesje med močjo in udobjem. Vsak detajl je skrbno oblikovan, da ustreza najvišjim standardom.
+            </label>
+        </div>
+
+        <div class="title">
+            <h1>BMW X5</h1>
+            <label>
+            BMW X5 je vrhunski SUV, ki združuje zmogljivost ter luksuz. Prostornost in napredni sistemi za pomoč vozniku naredijo vsak prevoz udoben in varen, ne glede na terensko zahtevnost. Idealen za družinske in avanturistične vožnje.
+            </label>
+        </div>
+
+        <div class="title">
+            <h1>BMW i8</h1>
+            <label>
+            BMW i8 je futuristični športni avto, ki združuje električno energijo in visoke zmogljivosti. Eleganten dizajn ter okolju prijazna tehnologija predstavljata prihodnost mobilnosti, ki navdušuje z vsako podrobnostjo in vožnjo.
+            </label>
+        </div>
+
+        <div class="title">
+            <h1>BMW Serija 7</h1>
+            <label>
+            Luksuzna limuzina BMW Serija 7 postavlja nove standarde v svetu prestižnih vozil. Izjemen prostor, vrhunski materiali in napredni sistemi udobja poskrbijo, da je vsak trenutek v avtu užitek, ki ga ne pozabiš.
+            </label>
+        </div>
+
+        <div class="title">
+            <h1>BMW M4</h1>
+            <label>
+            BMW M4 je prava izbira za ljubitelje športne vožnje. Z močnim motorjem, natančnim krmiljenjem in aerodinamičnim dizajnom zagotavlja nepozabne zmogljivosti na cesti. Vsak ovinek je izziv, ki ga M4 obvlada z lahkoto.
+            </label>
+        </div>
+
+        <div class="title">
+            <h1>BMW Z4</h1>
+            <label>
+            BMW Z4 je športni kabriolet, ki združuje užitek v vožnji na prostem z vrhunsko tehnologijo. Njegov eleganten dizajn in dinamične zmogljivosti zagotavljajo nepozabne trenutke ob vsakem potovanju.
+            </label>
+        </div>
+    </div>
+
+    <footer style="
+        background-color: var(--white);
+        color: var(--black);
+        margin-top: -50px;
+    ">
+        <div class="link">
+            <span>BMW</span>
+            <span>Vozila</span>
+            <span style="margin-left: auto;">IN</span>
+            <span>FB</span>
+            <span>GH</span>
+        </div>
+        <label>BMW</label>
+    </footer>
     
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
     <script src="../static/script/carousel-slider.js"></script>
     <script src="../static/script/script.js"></script>
+    <script src="../static/script/shuffle.js"></script>
 </body>
 </html>

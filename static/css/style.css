@@ -158,12 +158,11 @@
 }
 #container-landing-page .hero-container-landing-page {font-size: 1vw;}
 #container-landing-page .sidebar-text {
-    
-    
     position: absolute;
-    top: 20%;
-    right: .4em;
+    top: 60%;
+    left: 50%;
     transform: translate(-50%, -50%);
+    text-align: center;
     
     font-size: 100px;
     color: transparent;
@@ -418,12 +417,14 @@
 #slider-projects {
     width: 100%;
     height: 100vh;
+
+    position: relative;
 }
 #slider-projects .slide-titles {
     position: absolute;
     top: 0;
     left: 0;
-    width: 300vw;
+    width: 200vw;
     height: 100vh;
 
     display: flex;
@@ -449,7 +450,7 @@
 #slider-projects .active h1 {
     color: var(--white);
 }
-#slider-projects  .slide-images {
+#slider-projects .slide-images {
     width: 550px;
     height: 500px;
 
@@ -498,14 +499,14 @@
 .journal .preview .preview-img {
     width: 100%;
     height: 100%;
-    background: url("../images/asset/image-list.jpg");
+    background: url("../images/bmw/journal-list.jpg");
     background-size: cover;
     background-position: 0 0;
     pointer-events: none;
 }
 .table-container {
-    height: 100vh;
-    width: 100%;
+    height: 50vh;
+    width: 87vw;
 
     display: flex;
     justify-content: center ;
@@ -523,7 +524,7 @@
     opacity: .5 !important;
 }
 .table-container .projects {
-    width: 70%;
+    width: 100%;
     display: flex;
     flex-direction: column;
 }
@@ -579,7 +580,7 @@
     gap: 20px;
 }
 #container-shuffel .item:hover .img {
-    flex: .5;
+    flex: .3;
 }
 #container-shuffel .w1 {
     text-align: right;
@@ -592,7 +593,7 @@
     height: 100vh;
 
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-self: center;
 
     overflow: hidden;
@@ -607,7 +608,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 20px;
+    gap: 50px;
 }
 #image-gallery .row img {
     width: 100%;
@@ -631,7 +632,7 @@
 /* ====================================================== */
 /* Text */
 #text-section {
-    width: 90vw;
+    width: 87vw;
     height: fit-content;
     display: flex;
     justify-content: center;
@@ -639,9 +640,7 @@
     flex-direction: column;
     gap: 50px;
 
-    padding-inline: 50px;
 }
-
 #text-section h1 {
     font-size: 2.5rem;
     font-weight: bold;
@@ -652,14 +651,12 @@
     line-height: 1.8;
     max-width: 900px;
 }
-
 #text-section .table {
     width: 100%;
     display: flex;
     flex-direction: column;
     gap: 20px;
 }
-
 #text-section .table .row {
     display: flex;
     flex-wrap: wrap;
@@ -667,16 +664,107 @@
     border-bottom: 1px solid var(--black);
     padding: 15px 0;
 }
-
 #text-section .table .row span {
     flex: 1;
     min-width: 200px;
     font-size: 1rem;
 }
-
 #text-section .table .row-1 span {
     font-weight: bold;
     font-size: 1.1rem;
     color: #333;
     text-transform: uppercase;
+}
+
+/* ================================================= */
+/* Reveal Image */
+#reveal-image {
+    height: fit-content;
+    min-height: 1000px;
+    width: 100%;
+
+    position: relative;
+
+    margin-top: 50px;
+}
+#reveal-image .counter {
+    position: fixed;
+    padding: 2em;
+    top: 0;
+    left: 0;
+    color: var(--black);
+    text-decoration: none;
+}
+#reveal-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#reveal-image .bg-color {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+    background: rgb(250,186,74);
+    background: linear-gradient(
+        9deg,
+        rgba(250, 186, 74, 1) 0%,
+        var(--black) 100%
+    );
+}
+
+#reveal-image .items {
+    width: 100%;
+    height: 100%;
+    padding: 4em 2em;
+}
+#reveal-image .item {
+    width: 40%;
+    margin-bottom: 4em;
+}
+#reveal-image .item-info {
+    padding: .5em 0;
+    text-transform: uppercase;
+}
+#reveal-image .item-img {
+    overflow: hidden;
+}
+#reveal-image .item-img img {
+    will-change: transform;
+    transform: scale(1.25);
+    clip-path: polygon(0% 0%, 100% 0%, 100% 0%, 0% 0%);
+}
+#reveal-image .item:nth-child(1) .item-img {background: #1a1a1a;}   /* Deep black - luxury */
+#reveal-image .item:nth-child(2) .item-img {background: #003366;}  /* BMW blue */
+#reveal-image .item:nth-child(3) .item-img {background: #e6e6e6;}  /* Light silver */
+#reveal-image .item:nth-child(4) .item-img {background: #2a2a2a;}  /* Graphite gray */
+#reveal-image .item:nth-child(5) .item-img {background: #0f4c81;}  /* Deep elegant blue */
+#reveal-image .item:nth-child(6) .item-img {background: #c1121f;}  /* M red accent */
+#reveal-image .item:nth-child(7) .item-img {background: #ffffff;}  /* Clean white */
+#reveal-image .item:nth-child(8) .item-img {background: #6c757d;}  /* Steel gray */
+#reveal-image .item:nth-child(9) .item-img {background: #0075c9;}  /* Electric blue - BMW i */
+#reveal-image .item:nth-child(10) .item-img {background: #bdbdbd;} /* Light neutral gray */
+#reveal-image .item:nth-child(11) .item-img {background: #222222;} /* Jet black */
+
+#reveal-image .item:nth-child(1),
+#reveal-image .item:nth-child(4),
+#reveal-image .item:nth-child(8),
+#reveal-image .item:nth-child(11) {
+    position: relative;
+    left: 5%;
+}
+#reveal-image .item:nth-child(2),
+#reveal-image .item:nth-child(5),
+#reveal-image .item:nth-child(7),
+#reveal-image .item:nth-child(10) {
+    position: relative;
+    left: 50%;
+}
+#reveal-image .item:nth-child(3),
+#reveal-image .item:nth-child(6),
+#reveal-image .item:nth-child(9) {
+    position: relative;
+    left: 20%;
 }
