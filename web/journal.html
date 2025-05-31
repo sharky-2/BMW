@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="../static/css/design.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/root.css">    
+</head>
+<body class="journal">
+
+    <!-- ================================================= -->
+    <!-- Menu -->
+    <div class="menu" id="menu">
+        <label class="menu-link" onclick="menuFunction()" style="cursor: pointer;">menu</label>
+        
+        <section class="menu-section">
+
+            <!-- Home -->
+            <a href="../index.html" class="button" >
+                <img src="../static/images/icons/right-arrow.png">
+                <h1>domov</h1>
+            </a>
+
+            <!-- About -->
+            <a href="#" class="button">
+                <img src="../static/images/icons/right-arrow.png">
+                <h1>o meni</h1>
+            </a>
+            <a href="#" class="button sub-button">Življenje pic</a>
+            <a href="#" class="button sub-button">Programski jeziki</a>
+            <a href="#" class="button sub-button">Veščine in orodja</a>
+
+            <!-- Projects -->
+            <a href="projects.html" class="button">
+                <img src="../static/images/icons/right-arrow.png">
+                <h1>projekti</h1>
+            </a>
+            <a href="#" class="button sub-button">Spletne strani</a>
+            <a href="#" class="button sub-button">Igrce</a>
+
+            <a href="#" class="button">
+                <img src="../static/images/icons/right-arrow.png">
+                <h1>ostalo</h1>
+                
+            </a>
+            <a onclick="menuFunction()" class="button sub-button">dnevnik</a>
+            <a href="#" class="button sub-button">proces</a>
+
+            <a href="#" class="button">
+                <img src="../static/images/icons/right-arrow.png">
+                <h1>kontakt</h1>
+            </a>
+        </section>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Tabel -->
+    <div class="preview">
+        <div class="preview-img"></div>
+    </div>
+    <div class="table-container">
+        <div class="projects">
+            <div class="project" id="header">
+                <div class="client"><p>project</p></div>
+                <div class="loaction"><p>location</p></div>
+                <div class="service"><p>service</p></div>
+                <div class="year"><p>year</p></div>
+            </div>
+
+            <div class="project" id="p1">
+                <div class="client"><p>Project Alpha</p></div>
+                <div class="location"><p>New York</p></div>
+                <div class="service"><p>Architecture</p></div>
+                <div class="year"><p>2020</p></div>
+            </div>
+
+            <div class="project" id="p2">
+                <div class="client"><p>Project Beta</p></div>
+                <div class="location"><p>London</p></div>
+                <div class="service"><p>Interior Design</p></div>
+                <div class="year"><p>2021</p></div>
+            </div>
+
+            <div class="project" id="p3">
+                <div class="client"><p>Project Gamma</p></div>
+                <div class="location"><p>Tokyo</p></div>
+                <div class="service"><p>Urban Planning</p></div>
+                <div class="year"><p>2022</p></div>
+            </div>
+
+            <div class="project" id="p4">
+                <div class="client"><p>Project Delta</p></div>
+                <div class="location"><p>Berlin</p></div>
+                <div class="service"><p>Landscape</p></div>
+                <div class="year"><p>2019</p></div>
+            </div>
+
+            <div class="project" id="p5">
+                <div class="client"><p>Project Epsilon</p></div>
+                <div class="location"><p>Paris</p></div>
+                <div class="service"><p>Renovation</p></div>
+                <div class="year"><p>2023</p></div>
+            </div>
+
+        </div>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="../static/script/journal.js"></script>
+    <script src="../static/script/script.js"></script>
+</body>
+</html>

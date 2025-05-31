@@ -1,318 +1,236 @@
 <!DOCTYPE html>
-<html lang="sl">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
 
-    <link rel="stylesheet" href="server/static/css/design.css">
-    <link rel="stylesheet" href="server/static/css/style.css">
-    <link rel="stylesheet" href="server/static/css/root.css">
+    <link rel="stylesheet" href="static/css/design.css">
+    <link rel="stylesheet" href="static/css/style.css">
+    <link rel="stylesheet" href="static/css/root.css">    
 </head>
 <body>
 
     <!-- ================================================= -->
     <!-- Menu -->
-    <div id="menu-section">
-        <div class="menu">
-            <img src="server/static/image/shapes/blue-shape.jpg" style="border-radius: 100px;">
-            <a href="#" class="underline"> <input type="button" value="Domov"> </a>
-            <a href="server/web/about.html"> <input type="button" value="O meni"> </a>
-
-            <input type="button" value="Projekti" onclick="toggleDropdown_Projects()">
-            <input type="button" value="Drugo" onclick="toggleDropdown_Other()">
-            <a href="server/web/contact.html"> <input type="button" value="Kontakt"> </a>
-            
-        </div>
-        <div class="dropdown-section">
-
-            <!-- Dropdown Projects -->
-            <div class="dropdown_projects">
-                <a href="server/web/projects.html" class="text-design">Vsi</a>
-                <a href="server/web/web-projects.html" class="text-design">Spletni</a>
-                <a href="server/web/game-projects.html" class="text-design">Igre</a>
-            </div>
-
-            <!-- Dropdown Other -->
-            <div class="dropdown_other">
-                <a href="server/web/journal.html" class="text-design">Dnevnik</a>
-                <a href="server/web/media.html" class="text-design">Mediji</a>
-                <a href="server/web/resume.html" class="text-design">Življenjepis</a>
-                <a href="server/web/skills-tools.html" class="text-design">Veščine in orodja</a>
-                <a href="server/web/process.html" class="text-design">Proces</a>
-            </div>
-
-        </div>
-    </div>
-
-    <!-- ================================================= -->
-    <!-- Header 2-->
-    <header id="header-section-2">
-        <div class="text-section">
-            <h1 class="super-title-design">Od ideje do projekta</h1>
-            <label class="subtitle-design">Moj pristop k projektom je preprost: ustvarjalnost z namenom</label>
-            <a href="/server/web/about.html" class="black-button click-effect"><button>Preberi več</button></a>
-        </div>
-    </header>
-
-    <!-- ================================================= -->
-    <!-- Image Grid -->
-    <div id="image-grid">
-        <section class="image-section">
-            <div class="image-bg">
-                <label class="hand-writing-design">BubblyChat</label>
-                <img src="server/static/image/Projects/Web/BubblyChat.png">
-            </div>
-
-            <div class="image-bg">
-                <label class="hand-writing-design">Space Game</label>
-                <img src="server/static/image/Projects/Game/Space Game.png">
-            </div>
-
-            <div class="image-bg">
-                <label class="hand-writing-design">Frog</label>
-                <img src="server/static/image/Projects/Blender/Frog.jpg">
-            </div>
-
-            <div class="image-bg">
-                <label class="hand-writing-design">HistoryGo</label>
-                <img src="server/static/image/Projects/Web/HistoryGo.png">
-            </div>
-        </section>
-    </div>
-
-    <!-- ================================================= -->
-    <!-- Title -->
-    <div id="title-section">
-        <h1 class="title-design">Programski jeziki, s katerimi delam</h1>
-        <label class="subtitle-design">Vsi programski jeziki, ki jih uporabljam pri svojih projektih</label>
-    </div>
-
-    <!-- ================================================= -->
-    <!-- Card Grid -->
-    <div id="card-grid">
-        <section class="card-section">
-            <div class="card-bg">
-                <h1 class="title-design">Python</h1>
-                <label class="subtitle-design">Močan jezik za skripto, avtomatizacijo, spletne aplikacije in več.</label>
-            </div>
-
-            <div class="card-bg">
-                <h1 class="title-design">HTML & CSS</h1>
-                <label class="subtitle-design">Osnova za oblikovanje in izdelavo modernih spletnih strani.</label>
-            </div>
-
-            <div class="card-bg">
-                <h1 class="title-design">GDScript</h1>
-                <label class="subtitle-design">Uporablja se v Godot za razvoj iger in interaktivnih aplikacij.</label>
-            </div>
-
-            <div class="card-bg">
-                <h1 class="title-design">C</h1>
-                <label class="subtitle-design">Nizkonivojski jezik za hitro in učinkovito programsko logiko.</label>
-            </div>
-
-            <!-- Next row -->
-            <div class="card-bg">
-                <h1 class="title-design">MySQL</h1>
-                <label class="subtitle-design">Zanesljiv sistem za upravljanje podatkovnih baz za spletne aplikacije.</label>
-            </div>
-
-            <div class="card-bg">
-                <h1 class="title-design">PHP</h1>
-                <label class="subtitle-design">Strežniški jezik za dinamične spletne strani in aplikacije.</label>
-            </div>
-
-            <div class="card-bg">
-                <h1 class="title-design">Lua</h1>
-                <label class="subtitle-design">Lahek skriptni jezik, pogosto uporabljen v igrah.</label>
-            </div>
-
-            <div class="card-bg">
-                <h1 class="title-design">JavaScript</h1>
-                <label class="subtitle-design">Ključni jezik za dinamičnost in interaktivnost na spletu.</label>
-            </div>
-        </section>
-    </div>
-
-    <!-- ================================================= -->
-    <!-- Skills -->
-    <div id="moving-grid-section">
-        <div class="moving-line">
-            <section class="image-section">
-                <div class="image-bg">
-                    <h1 class="text-design">Modeliranje</h1>
-                    <img src="server/static/image/Projects/Blender/AirPlane.png">
-                </div>
-                <div class="image-bg">
-                    <h1 class="text-design">Igre</h1>
-                    <img src="server/static/image/Projects/Game/plane-lia.jpg">
-                </div>
-                <div class="image-bg">
-                    <h1 class="text-design" style="color: var(--primary-text-color);">Splet</h1>
-                    <img src="server/static/image/Projects/Web/BubblyChat.png">
-                </div>
-                <div class="image-bg">
-                    <h1 class="text-design">Animacija</h1>
-                    <img src="server/static/image/Projects/Blender/Astronaut.jpg">
-                </div>
-            </section>
-        </div>
-    </div>
-
-    <!-- ================================================= -->
-    <!-- About -->
-    <div id="about-section">
-        <section class="text-section">
-            <h1 class="title-design">O meni</h1>
-            <label class="text-design text-appear">
-                Sem dijak Srednje tehnične šole (STŠ), kjer se izobražujem na področju programiranja. V prostem času dodatno razvijam svoje znanje in raziskujem različne programske jezike. Navdušuje me tudi ustvarjanje v Blenderju, kjer združujem svojo ustvarjalnost s tehničnim znanjem.
-            </label>
-
-            <br><label class="text-design text-appear">
-                Rad raziskujem nove tehnologije in ustvarjam projekte, ki mi omogočajo osebno in strokovno rast – tako na tehničnem kot na ustvarjalnem področju.
-            </label>
-
-        </section>
-
-        <section class="image-section text-appear" style="text-align: center;">
-            <div class="image-bg">
-                <img src="server/static/image/Projects/Blender/Astronaut.jpg">
-                <label class="hand-writing-design">Modeliranje</label>
-            </div>
-            <div class="image-bg">
-                <img src="server/static/image/Projects/Game/Space Game.png">
-                <label class="hand-writing-design">Programiranje</label>
-            </div>
-        </section>
-    </div>
-
-    <!-- ================================================= -->
-    <!-- Project cards -->
-    <div id="card-slide-projects-section">
-        <div class="card-slider-track">
-            <section class="card">
-                <img src="server/static/image/Projects/Blender/AirPlane.png">
-                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-                <label class="hand-writing-design">Lahko letalo</label>
-            </section>
-            <section class="card">
-                <img src="server/static/image/Projects/Web/HistoryGo.png">
-                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-                <label class="hand-writing-design">HistoryGo</label>
-            </section>
-            <section class="card">
-                <img src="server/static/image/Projects/Blender/Space-ship.jpg">
-                <div class="dot"></div><div class="dot"></div><div class="dot"></div><div class="dot"></div>
-                <label class="hand-writing-design">Vesoljska ladja</label>
-            </section>
-        </div>
-    </div>
-
-    <!-- ================================================= -->
-    <!-- Table -->
-    <div id="experience-section">
-        <h1 class="title-design">Delovne izkušnje</h1>
-        <section class="text-table">
-
-            <!-- Programming engine -->
-            <div class="line text-appear">
-                <div class="left">
-                    <h1 class="subtitle-design">Orodje</h1>
-                </div>
-                <div class="right">
-                    <label class="text">Programersko okolje</label> 
-                    <label class="rank rank-blue">
-                        <img src="server/static/image/icon/Vs-code.png">
-                        VS Code
-                    </label>
-                </div>
-            </div>
-
-            <!-- Design -->
-            <div class="line text-appear">
-                <div class="left">
-                    <h1 class="subtitle-design">Oblikovanje</h1>
-                </div>
-                <div class="right">
-                    <label class="text">Oblikovanje spletnih strani / modulov</label> 
-                    <label class="rank rank-orange">
-                        <img src="server/static/image/icon/figma.webp">
-                        Figma
-                    </label>
-                </div>
-            </div>
-
-            <!-- Learning -->
-            <div class="line text-appear">
-                <div class="left">
-                    <h1 class="subtitle-design">Učenje</h1>
-                </div>
-                <div class="right">
-                    <label class="text">w3school / gpt / youtube / github</label> 
-                    <label class="rank rank-gray">
-                        <img src="server/static/image/icon/tips.png">
-                        Samostojno učenje
-                    </label>
-                </div>
-            </div>
-
-        </section>
-    </div>
-
-    <!-- ================================================= -->
-    <!-- Title -->
-    <div id="grid-title">
-        <h1 class="title-design autoBlur">študent</h1>
-        <h1 class="title-design autoBlur">oblikovalec</h1>
-        <h1 class="title-design autoBlur">razvijalec</h1>
-        <h1 class="title-design autoBlur">raziskuj</h1>
-        <h1 class="title-design autoBlur">poglej več</h1>
-    </div>
-
-    <!-- ================================================= -->
-    <!-- Projects -->
-    <div id="projects">
-        <div id="project-section" class="text-appear-2">
-            <div class="image-bg">
-                <img src="server/static/image/Projects/Web/HistoryGo.png">
-            </div>
-            <section class="text-section">
-                <h1 class="title-design">HistoryGo</h1>
-                <label class="subtitle-design">HistoryGo je tvoje digitalno potovanje v preteklost. Ne glede na to, ali si zgodovinski navdušenec ali načrtuješ potovanje, ti HistoryGo pomaga odkriti zgodovinsko pomembne kraje po vsem svetu.</label>
-            </section>
-    
-            <section class="button-section">
-                <a href="https://github.com/sharky-2/HistoryGo" target="_blank" class="gray-button click-effect">
-                    <button>raziskuj več</button>
-                    <img src="server/static/image/icon/right-arrow.png">
-                </a>
-            </section>
-        </div>
+    <div class="menu" id="menu">
+        <label class="menu-link" onclick="menuFunction()" style="cursor: pointer;">menu</label>
         
-        <div id="project-section" class="text-appear-2">
-            <div class="image-bg">
-                <img src="server/static/image/Projects/Web/BubblyChat.png">
-            </div>
-            <section class="text-section">
-                <h1 class="title-design">BubblyChat</h1>
-                <label class="subtitle-design">BubblyChat je lahka spletna platforma za klepet, ki ljudi povezuje takoj. Klikni »Začni klepet«, in že si povezan – brez registracije!</label>
-            </section>
-    
-            <section class="button-section">
-                <a href="https://github.com/sharky-2/BubblyChat" class="gray-button click-effect">
-                    <button>raziskuj več</button>
-                    <img src="server/static/image/icon/right-arrow.png">
-                </a>
-            </section>
-        </div>
+        <section class="menu-section">
+
+            <!-- Home -->
+            <a class="button" >
+                <img src="static/images/icons/right-arrow.png">
+                <h1 onclick="menuFunction()">domov</h1>
+            </a>
+
+            <!-- About -->
+            <a href="#" class="button">
+                <img src="static/images/icons/right-arrow.png">
+                <h1>o meni</h1>
+            </a>
+            <a href="#" class="button sub-button">Življenje pic</a>
+            <a href="#" class="button sub-button">Programski jeziki</a>
+            <a href="#" class="button sub-button">Veščine in orodja</a>
+
+            <!-- Projects -->
+            <a href="web/projects.html" class="button">
+                <img src="static/images/icons/right-arrow.png">
+                <h1>projekti</h1>
+            </a>
+            <a href="#" class="button sub-button">Spletne strani</a>
+            <a href="#" class="button sub-button">Igrce</a>
+
+            <a href="#" class="button">
+                <img src="static/images/icons/right-arrow.png">
+                <h1>ostalo</h1>
+                
+            </a>
+            <a href="web/journal.html" class="button sub-button">dnevnik</a>
+            <a href="#" class="button sub-button">proces</a>
+
+            <a href="#" class="button">
+                <img src="static/images/icons/right-arrow.png">
+                <h1>kontakt</h1>
+            </a>
+        </section>
     </div>
 
     <!-- ================================================= -->
-    <!-- Title / subtitle -->
-    <div id="title-section" style="margin-bottom: -100px;" class="text-appear">
-        <h1 class="title-design">Harmonika</h1>
-        <label class="subtitle-design">Vsebinske kategorije, ki jih raziskujem in razvijam.</label>
+    <!-- Landing Page -->
+    <div id="container-landing-page" class="container">
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script> 
+        <script src="https://unpkg.com/ionicons@5.2.3/dist/ionicons.js"></script>
+
+        <div class="images">
+            <div class="img left"></div>
+            <div class="img right"></div>
+        </div>
+
+        <div class="hero-image">
+            <div class="wrapper-img">
+                <div class="box"></div>
+                <div>
+                    <img src="static/images/asset/image-1.jpg" alt="" class="image">
+                </div>
+            </div>
+        </div>
+
+        <div class="header"><p class="title">Portfolio</p></div>
+        <!-- <div class="hero-container">
+            <div class="sidebar-text">003</div>
+            <div class="projects">projects</div>
+            <div class="img-nav">
+                <div class="prev">prev</div>
+                <div class="next">next</div>
+            </div>
+        </div> -->
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Lenis Scroll -->
+    <div id="container-scroll-service" class="container">
+
+        <section class="hero"></section>
+        <section class="services">
+            <div class="services-header">
+                <div class="col"><h1>Title</h1></div>
+                <div class="col"><h1>All Services</h1></div>
+            </div>
+
+
+            <div class="service">
+                <div class="service-info">
+                    <h1>Lorem Ipsum</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consecteture adipisicing elit. Elignedit, vel.
+                    </p>
+                </div>
+                <div class="service-img">
+                    <div class="img"><img src="static/images/asset/image-2.jpg" alt=""></div>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-info">
+                    <h1>Lorem Ipsum</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consecteture adipisicing elit. Elignedit, vel.
+                    </p>
+                </div>
+                <div class="service-img">
+                    <div class="img"><img src="static/images/asset/image-10.jpg" alt=""></div>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-info">
+                    <h1>Lorem Ipsum</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consecteture adipisicing elit. Elignedit, vel.
+                    </p>
+                </div>
+                <div class="service-img">
+                    <div class="img"><img src="static/images/asset/image-4.jpg" alt=""></div>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-info">
+                    <h1>Lorem Ipsum</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consecteture adipisicing elit. Elignedit, vel.
+                    </p>
+                </div>
+                <div class="service-img">
+                    <div class="img"><img src="static/images/asset/image-5.jpg" alt=""></div>
+                </div>
+            </div>
+
+            <div class="service">
+                <div class="service-info">
+                    <h1>Lorem Ipsum</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consecteture adipisicing elit. Elignedit, vel.
+                    </p>
+                </div>
+                <div class="service-img">
+                    <div class="img"><img src="static/images/asset/image-6.jpg" alt=""></div>
+                </div>
+            </div>
+
+             <div class="service">
+                <div class="service-info">
+                    <h1>Lorem Ipsum</h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consecteture adipisicing elit. Elignedit, vel.
+                    </p>
+                </div>
+                <div class="service-img">
+                    <div class="img"><img src="static/images/asset/image-7.jpg" alt=""></div>
+                </div>
+            </div>
+
+        </section>
+        <section class="footer"></section>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Marquee Animation -->
+    <section class="spacer"></section>
+    <section id="marquee">
+        <div class="marquee__inner">
+            <div class="marquee__part">
+                modern creative studio
+                <div class="arrow"><img src="static/images/icons/right-arrow.png" alt=""></div>
+            </div>
+
+            <div class="marquee__part">
+                modern creative studio
+                <div class="arrow"><img src="static/images/icons/right-arrow.png" alt=""></div>
+            </div>
+
+            <div class="marquee__part">
+                modern creative studio
+                <div class="arrow"><img src="static/images/icons/right-arrow.png" alt=""></div>
+            </div>
+
+            <div class="marquee__part">
+                modern creative studio
+                <div class="arrow"><img src="static/images/icons/right-arrow.png" alt=""></div>
+            </div>
+        </div>
+    </section>
+    <section class="spacer"></section>
+
+    <!-- ================================================= -->
+    <!-- Shuffel Letter -->
+    <div id="container-shuffel">
+        <div class="item item-1">
+            <div class="word w1">Pongram</div>
+            <div class="img"><img src="static/images/asset/image-12.jpg"></div>
+            <div class="word w2">Pongram</div>
+        </div>
+
+        <div class="item item-2">
+            <div class="word w1">Pongram</div>
+            <div class="img"><img src="static/images/asset/image-12.jpg"></div>
+            <div class="word w2">Pongram</div>
+        </div>
+
+        <div class="item item-3">
+            <div class="word w1">Pongram</div>
+            <div class="img"><img src="static/images/asset/image-12.jpg"></div>
+            <div class="word w2">Pongram</div>
+        </div>
+
+        <div class="item item-4">
+            <div class="word w1">Pongram</div>
+            <div class="img"><img src="static/images/asset/image-12.jpg"></div>
+            <div class="word w2">Pongram</div>
+        </div>
     </div>
 
     <!-- ================================================= -->
@@ -320,83 +238,36 @@
     <div id="accordion-list">
         <div class="item">
             <div class="question">
-                <label class="text text-design">Kreativni projekti</label>
+                <label class="text title-d">Kreativni projekti</label>
                 <div class="dropdown">></div>
             </div>
-            <div class="answer text-design">Opis kreativnih projektov in idej, ki jih ustvarjam za zabavo, kot so igre, umetniške kreacije in drugo.</div>
-            <img class="answer" src="server/static/image/Projects/Game/Space Game.png">
+            <div class="answer text-d">Opis kreativnih projektov in idej, ki jih ustvarjam za zabavo, kot so igre, umetniške kreacije in drugo.</div>
         </div>
         <div class="item">
             <div class="question">
-                <label class="text text-design">Chrome razširitve</label>
+                <label class="text title-d">Chrome razširitve</label>
                 <div class="dropdown">></div>
             </div>
-            <div class="answer text-design">Razvijam Chrome razširitve za izboljšanje uporabniške izkušnje in produktivnosti.</div>
+            <div class="answer text-d">Razvijam Chrome razširitve za izboljšanje uporabniške izkušnje in produktivnosti.</div>
         </div>
         <div class="item">
             <div class="question">
-                <label class="text text-design">Šolski projekti</label>
+                <label class="text title-d">Šolski projekti</label>
                 <div class="dropdown">></div>
             </div>
-            <div class="answer text-design">Projekti, ki jih ustvarjam v sklopu šolskih nalog, predstavitev ali učnih aktivnosti.</div>
+            <div class="answer text-d">Projekti, ki jih ustvarjam v sklopu šolskih nalog, predstavitev ali učnih aktivnosti.</div>
         </div>
         <div class="item">
             <div class="question">
-                <label class="text text-design">Zabavni projekti</label>
+                <label class="text title-d">Zabavni projekti</label>
                 <div class="dropdown">></div>
             </div>
-            <div class="answer text-design">Razvoj zabavnih projektov, kot so igre ali aplikacije za sprostitev in zabavo.</div>
-            <img class="answer" src="server/static/image/Projects/Blender/Frog.jpg">
+            <div class="answer text-d">Razvoj zabavnih projektov, kot so igre ali aplikacije za sprostitev in zabavo.</div>
         </div>
     </div>
 
-    <!-- ================================================= -->
-    <!-- Cards -->
-    <div id="card-section">
-        <section class="image-section" style="text-align: center;">
-            <div class="image-bg">
-                <img src="server/static/image/Projects/Blender/AirPlane.png">
-                <label class="hand-writing-design">Modeliranje</label>
-            </div>
 
-            <div class="image-bg">
-                <img src="server/static/image/Projects/Blender/Astronaut.jpg">
-                <label class="hand-writing-design">Animacija</label>
-            </div>
-
-            <div class="image-bg">
-                <img src="server/static/image/Projects/Blender/Frog.jpg">
-                <label class="hand-writing-design">Modeliranje</label>
-            </div>
-
-            <div class="image-bg">
-                <img src="server/static/image/Projects/Game/Space Game.png">
-                <label class="hand-writing-design">Godot</label>
-            </div>
-        </section>
-    </div>
-
-    <!-- ================================================= -->
-    <!-- Footer -->
-    <footer>
-        <div class="left">
-            <h1 class="subtitle-design">Kontakt</h1>
-            <label class="text-design">example@gmail.com</label>
-            <label class="text-design">30 300 300 300</label> 
-        </div>
-        <div class="middle">
-            <h1 class="subtitle-design">Kaj delam</h1>
-            <label class="text-design">Spletne strani</label>
-            <label class="text-design">3D / 2D igrice</label>
-            <label class="text-design">Zabavne programe</label>
-            <label class="text-design">In še več</label>
-        </div>
-        <div class="right">
-            <h1 class="subtitle-design">Splet</h1>
-            <a href="https://github.com/sharky-2" target="_blank"> <label class="text-design">GitHub</label> </a>
-        </div>
-    </footer>
-
-    <script src="server/static/script/script.js"></script>
+    <script src="static/script/script.js"></script>
+    <script src="static/script/index.js"></script>
 </body>
 </html>
