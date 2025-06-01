@@ -16,6 +16,7 @@ html, body {
     flex-direction: column;
 
     overflow-x: hidden;
+    font-family: "Robot";
 }
 
 footer {
