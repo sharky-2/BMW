@@ -429,7 +429,7 @@
     transform: translateX(-150vw);
 
     display: flex;
-    z-index: 2;
+    z-index: 0;
 }
 #slider-projects .title {
     flex: 1;
