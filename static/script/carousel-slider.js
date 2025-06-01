@@ -2,18 +2,18 @@ let currentIndex = 1;
 const totalSlides = 12;
 
 const imageSources = {
-  1: "/static/images/bmw/jon-koop-khYVyHiNZo0-unsplash.jpg",     
-  2: "/static/images/bmw/devon-janse-van-rensburg-yoqHLUayUTg-unsplash.jpg", 
-  3: "/static/images/bmw/michael-jasmund-kR1u56bYces-unsplash.jpg", 
-  4: "/static/images/bmw/denys-nevozhai-QD-8l-8_uJg-unsplash.jpg", 
-  5: "/static/images/bmw/leon-seibert-1RiyAwNIiew-unsplash.jpg",    
-  6: "/static/images/bmw/melody-p-PwcfmLRzJcI-unsplash.jpg",
-  7: "/static/images/bmw/concept.jpg",
-  8: "/static/images/bmw/g20.jpg",    
-  9: "/static/images/bmw/i4.jpg",      
-  10: "/static/images/bmw/ix.jpg",    
-  11: "/static/images/bmw/m3.jpg",     
-  12: "/static/images/bmw/m8.jpg" 
+  1: "../static/images/bmw/jon-koop-khYVyHiNZo0-unsplash.jpg",     
+  2: "../static/images/bmw/devon-janse-van-rensburg-yoqHLUayUTg-unsplash.jpg", 
+  3: "../static/images/bmw/michael-jasmund-kR1u56bYces-unsplash.jpg", 
+  4: "../static/images/bmw/denys-nevozhai-QD-8l-8_uJg-unsplash.jpg", 
+  5: "../static/images/bmw/leon-seibert-1RiyAwNIiew-unsplash.jpg",    
+  6: "../static/images/bmw/melody-p-PwcfmLRzJcI-unsplash.jpg",
+  7: "../static/images/bmw/concept.jpg",
+  8: "../static/images/bmw/g20.jpg",    
+  9: "../static/images/bmw/i4.jpg",      
+  10: "../static/images/bmw/ix.jpg",    
+  11: "../static/images/bmw/m3.jpg",     
+  12: "../static/images/bmw/m8.jpg" 
 };
 
 const updateActiveSlide = () => {
