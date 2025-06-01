@@ -8,7 +8,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 10px;
     flex: 1;
 
     position: fixed;
@@ -20,6 +20,10 @@
     font-style: italic;
 
     z-index: 100;
+}
+#menu img {
+    width: 25px;
+    cursor: pointer;
 }
 #menu .menu-section {
     background-color: var(--black);
