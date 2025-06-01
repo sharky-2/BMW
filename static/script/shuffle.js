@@ -7,19 +7,19 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function startShuffle(item) {
-  if (item.dataset.animating) return; // prevent overlapping animations
+  if (item.dataset.animating) return; 
 
   item.dataset.animating = "true";
 
   const words = Array.from(item.querySelectorAll(".word"));
   const originalTexts = words.map(w => w.textContent);
 
-  const maxFrames = 30;
+  const maxFrames = 30; 
+  const delay = 20; 
   let frame = 0;
 
   function shuffleFrame() {
     if (frame >= maxFrames) {
-      // Restore original text and end animation
       words.forEach((word, i) => {
         word.textContent = originalTexts[i];
       });
@@ -32,7 +32,7 @@ function startShuffle(item) {
     });
 
     frame++;
-    requestAnimationFrame(shuffleFrame);
+    setTimeout(shuffleFrame, delay); 
   }
 
   shuffleFrame();

@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="../static/css/design.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/root.css">    
+</head>
+<body class="journal">
+
+    <!-- ================================================= -->
+    <!-- Menu -->
+    <div class="menu" id="menu">
+        <label class="menu-link" onclick="menuFunction()" style="cursor: pointer;">ostalo</label>
+
+        <section class="menu-section">
+            <!-- Home -->
+            <a href="../index.html" class="button">
+                <img src="../static/images/icons/right-arrow.png" />
+                <h1>domov</h1>
+            </a>
+
+            <!-- About -->
+            <a href="about.html" class="button">
+                <img src="../static/images/icons/right-arrow.png" />
+                <h1>o nas</h1>
+            </a>
+            <a href="resume.html" class="button sub-button">Življenjepis</a>
+            <a href="birth.html" class="button sub-button">Rojstvo</a>
+            <a href="history.html" class="button sub-button">Zgodovina</a>
+
+            <!-- Projects -->
+            <a href="vehicles.html" class="button">
+                <img src="../static/images/icons/right-arrow.png" />
+                <h1>Vozila</h1>
+            </a>
+            <a href="old-models.html" class="button sub-button">Stari modeli</a>
+            <a href="new-models.html" class="button sub-button">Novi modeli</a>
+            <a href="sport-models.html" class="button sub-button">Športni modeli</a>
+
+            <a class="button">
+                <img src="../static/images/icons/right-arrow.png" />
+                <h1 onclick="menuFunction()">ostalo</h1>
+            </a>
+            <a href="journal.html" class="button sub-button">dnevnik</a>
+
+            <a href="#" class="button">
+                <img src="../static/images/icons/right-arrow.png" />
+                <h1>Drive On!</h1>
+            </a>
+        </section>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Text -->
+    <div id="text-section" style="margin-top: 150px; margin-bottom: -50px;">
+        <div class="title">
+            <h1>BMW OSTALO</h1>
+            <label>
+                Dobrodošli v BMW OSTALO – prostoru, kjer raziskujemo bogato zgodovino, kulturo in strast do znamke BMW.
+            </label>
+            <label>
+                Od legend vozil do ekskluzivnih dogodkov, tukaj odkrijete vse, kar presega samo vožnjo.
+            </label>
+            <label>
+                Delimo zgodbe o BMW skupnosti, zbirateljih in edinstvenih modelih, ki so zaznamovali avtomobilsko industrijo.
+            </label>
+            <label>
+                Skozi intervjuje in reportaže spoznavamo, kako BMW vpliva na stil življenja in inovativni duh svojih navdušencev.
+            </label>
+            <label>
+                Pridružite se nam in doživite, kaj pomeni biti del BMW sveta tudi izven ceste.
+            </label>
+        </div>
+
+        <div class="title">
+            <h2>Več kot avtomobil</h2>
+            <label>
+                BMW ni le vozilo, temveč simbol kulture, tradicije in napredka.
+            </label>
+            <label>
+                Spoznajte, kako BMW povezuje umetnost, šport in tehnologijo v edinstvene izkušnje.
+            </label>
+            <label>
+                Od ekskluzivnih klubov do svetovnih rallyjev – BMW je del življenj milijonov ljudi po vsem svetu.
+            </label>
+            <label>
+                Razkrivamo, kako znamka spodbuja trajnostne vrednote z inovativnimi rešitvami tudi v vsakdanjem življenju.
+            </label>
+            <label>
+                OSTALO je prostor, kjer se prepletajo zgodovina, družabnost in prihodnost mobilnosti.
+            </label>
+        </div>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Tabel -->
+    <div class="preview">
+        <div class="preview-img"></div>
+    </div>
+    <div id="reveal-image" style="margin-top: 150px;">
+        <div class="counter"><p>0</p></div>
+        <div class="bg-color"></div>
+
+        <div class="items">
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/1916.jpg"></div>
+                <div class="item-info"><label>Ustanovitev BMW – začetek avtomobilske legende (1916)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/1923.jpg"></div>
+                <div class="item-info"><label>Prvi BMW motocikel R32 – pionir dveh koles (1923)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/1928.jpg"></div>
+                <div class="item-info"><label>Vstop na trg avtomobilov z Dixi 3/15 (1928)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/1936.jpg"></div>
+                <div class="item-info"><label>BMW 328 – športna ikona in tehnološki mejnik (1936)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/1959.jpg"></div>
+                <div class="item-info"><label>Obrat in rešitev ob finančni krizi – preobrat leta 1959</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/196.jpg"></div>
+                <div class="item-info"><label>Nova Klasa – začetek moderne avtomobilske dobe (1962)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/1972.jpg"></div>
+                <div class="item-info"><label>Ustanovitev BMW M GmbH – športni oddelek (1972)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/1994.jpg"></div>
+                <div class="item-info"><label>Širitev z Rover Group – ambiciozni 90. leti (1994)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/2013.jpg"></div>
+                <div class="item-info"><label>Začetek serije BMW i – električna prihodnost (2013)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/2020.jpg"></div>
+                <div class="item-info"><label>Elektrifikacija in digitalizacija – modeli iX, i4, i7 (od 2020)</label></div>
+            </div>
+            <div class="item">
+                <div class="item-img"><img src="../static/images/bmw/2024.jpg"></div>
+                <div class="item-info"><label>Prihodnost mobilnosti – trajnost, inovacije, vizija (2024)</label></div>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script> 
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+        <script src="../static/script/reveal-image.js"></script>
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- Accordion -->
+    <div id="accordion-list" style="margin: 50px 0 50px 0;">
+        <div class="item">
+            <div class="question">
+                <label class="text title-d">Kaj predstavlja BMW OSTALO?</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-d">
+                BMW OSTALO raziskuje zgodovino, kulturo, posebne dogodke in strast, ki povezuje BMW skupnost po svetu.
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="question">
+                <label class="text title-d">Zakaj je BMW več kot le avtomobil?</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-d">
+                BMW združuje tehnologijo, dizajn, šport in življenjski slog, kar ga dela edinstvenega in navdihujočega.
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="question">
+                <label class="text title-d">Kako se lahko vključim v BMW skupnost?</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-d">
+                Z udeležbo na BMW dogodkih, klubih navdušencev, zbiranju klasikov in spremljanjem novosti v svetu znamke.
+            </div>
+        </div>
+
+        <div class="item">
+            <div class="question">
+                <label class="text title-d">Kaj pričakovati od BMW OSTALO vsebin?</label>
+                <div class="dropdown">></div>
+            </div>
+            <div class="answer text-d">
+                Ekskluzivne zgodbe, zanimivosti, intervjuji in vpogledi v življenjski slog in kulturo BMW.
+            </div>
+        </div>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Card Slider -->
+    <div id="card-slider" class="container">
+        <div class="slider">
+            <div class="card">
+                <img src="../static/images/bmw/1916.jpg" alt="Začetki">
+                <div class="copy">
+                    <h1>Začetki</h1>
+                    <h1 class="subtitle">Ustanovitev BMW – začetek zgodbe o inovacijah in strasti.</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../static/images/bmw/1923.jpg" alt="Motocikli">
+                <div class="copy">
+                    <h1>Motocikli</h1>
+                    <h1 class="subtitle">Prvi BMW motocikli – tehnološki preboji in legendarni modeli.</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../static/images/bmw/1928.jpg" alt="Avtomobili">
+                <div class="copy">
+                    <h1>Avtomobili</h1>
+                    <h1 class="subtitle">Prvi BMW avtomobili – korak proti avtomobilski odličnosti.</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../static/images/bmw/1936.jpg" alt="Ikone">
+                <div class="copy">
+                    <h1>Ikone</h1>
+                    <h1 class="subtitle">BMW 328 – legendarni športni avtomobil, ki je zaznamoval zgodovino.</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../static/images/bmw/jakob-rosen-rC1Llibcis0-unsplash.jpg" alt="Obrat">
+                <div class="copy">
+                    <h1>Obrat</h1>
+                    <h1 class="subtitle">Preboj iz krize in povratek k inovacijam ter rasti.</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../static/images/bmw/concept.jpg" alt="Nova doba">
+                <div class="copy">
+                    <h1>Nova doba</h1>
+                    <h1 class="subtitle">Nova Klasa – začetki modernih BMW modelov in tehnologij.</h1>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="../static/images/bmw/m2.jpg" alt="Šport">
+                <div class="copy">
+                    <h1>Šport</h1>
+                    <h1 class="subtitle">Ustanovitev BMW M – strast do zmogljivosti in dirk.</h1>
+                </div>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/CustomEase.min.js"></script>
+        <script src="../static/script/card-slide.js"></script>
+    </div>
+
+
+    <!-- ================================================= -->
+    <!-- Text -->
+    <div id="text-section" style="margin-bottom: 50px;">
+        <div class="title">
+            <h1>Ostanite na tekočem z BMW svetom</h1>
+            <label>
+                BMW Dnevnik je vaš zanesljiv vir za poglobljene zgodbe, novosti in tehnološke preboje iz sveta BMW.
+            </label>
+            <label>
+                Preberite ekskluzivne intervjuje, spremljajte predstavitve novih modelov in odkrijte, kako nastajajo naše rešitve.
+            </label>
+            <label>
+                Vsaka objava prinaša znanje, navdih in pogled v prihodnost mobilnosti, kot jo vidi BMW.
+            </label>
+            <label>
+                Ne zamudite ozadij najnovejših inovacij, konceptov in razvojnih izzivov.
+            </label>
+            <label>
+                Dnevnik ustvarjamo za vas – za vse, ki cenite kakovost, napredek in strast do avtomobilizma.
+            </label>
+        </div>
+    </div>
+
+    <!-- ================================================= -->
+    <!-- Footer -->
+    <footer>
+        <div class="link">
+            <span>BMW</span>
+            <span>Vozila</span>
+            <span style="margin-left: auto;">IN</span>
+            <span>FB</span>
+            <span>GH</span>
+        </div>
+        <label>BMW</label>
+    </footer>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="../static/script/journal.js"></script>
+    <script src="../static/script/script.js"></script>
+</body>
+</html>

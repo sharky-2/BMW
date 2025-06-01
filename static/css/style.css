@@ -159,7 +159,7 @@
 #container-landing-page .hero-container-landing-page {font-size: 1vw;}
 #container-landing-page .sidebar-text {
     position: absolute;
-    top: 60%;
+    top: 70%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
@@ -423,12 +423,12 @@
 #slider-projects .slide-titles {
     position: absolute;
     top: 0;
-    left: 0;
-    width: 200vw;
+    left: 200vw;
+    width: 300vw;
     height: 100vh;
+    transform: translateX(-150vw);
 
     display: flex;
-    pointer-events: none;
     z-index: 2;
 }
 #slider-projects .title {
@@ -442,14 +442,16 @@
 }
 #slider-projects .title h1 {
     text-align: center;
-    font-size: 28px;
+    font-size: 20px;
+    transform: scale(0);
     font-weight: 400;
-    color: rgba(255,255,255,.2);
+    color: var(--white);
     transition: all .25s ease;
 }
-#slider-projects .active h1 {
-    color: var(--white);
+#slider-projects .title.active h1 {
+    transform: scale(1.3);
 }
+
 #slider-projects .slide-images {
     width: 550px;
     height: 500px;
@@ -767,4 +769,77 @@
 #reveal-image .item:nth-child(9) {
     position: relative;
     left: 20%;
+}
+
+/* ================================================= */
+/* Card Slider */
+#card-slider {
+    position: relative;
+    width: 100%;
+    height: 80vh;
+    overflow: hidden;
+    background-color: var(--white);
+}
+#card-slider img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#card-slider .slider {
+    position: absolute;
+    top: -20vh;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden; 
+
+    perspective: 200px;  
+    perspective-origin: 50% 100%;
+}
+#card-slider .card {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate3d(-50%, -50%, 0);
+
+    width: 70vw;
+    height: 600px;
+
+    overflow: hidden;
+    background-color: var(--white);
+}
+#card-slider .copy h1:nth-child(2) {
+    font-size: 1vw;
+}
+#card-slider .card img {
+    position: absolute;
+    opacity: .75;
+}
+#card-slider .copy {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    width: 100%;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+}
+#card-slider h1 {
+    position: relative;
+    text-align: center;
+    font-size: 3vw;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--black);
+}
+#card-slider h1 span {
+    position: relative;
+    display: inline-block;
+}
+
+/* ================================================= */
+/* Maps */
+#maps {
+    width: 100%;
+    height: 600px;
+    border: none;
 }

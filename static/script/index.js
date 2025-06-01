@@ -1,4 +1,18 @@
 document.addEventListener("DOMContentLoaded", function () {
+
+    // === LENIS SCRIPTS ===
+    setTimeout(() => {
+        Promise.all([
+            loadScript("https://cdn.jsdelivr.net/npm/intersection-observer@0.12.2/intersection-observer.min.js"),
+            loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"),
+            loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"),
+            loadScript("https://unpkg.com/lenis@1.1.1/dist/lenis.min.js")
+        ]).then(() => {
+            console.log("Scroll-related scripts loaded.");
+            initScrollAnimations();
+        }).catch(err => console.error("Failed to load scripts", err));
+    }, 2000); 
+
     // === LANDING PAGE ANIMATIONS ===
     let textWrapper = document.querySelector(".title");
     textWrapper.innerHTML = textWrapper.textContent.replace(
@@ -66,19 +80,6 @@ document.addEventListener("DOMContentLoaded", function () {
         },
         0.1
     );
-
-    // === LENIS SCRIPTS ===
-    setTimeout(() => {
-        Promise.all([
-            loadScript("https://cdn.jsdelivr.net/npm/intersection-observer@0.12.2/intersection-observer.min.js"),
-            loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"),
-            loadScript("https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"),
-            loadScript("https://unpkg.com/lenis@1.1.1/dist/lenis.min.js")
-        ]).then(() => {
-            console.log("Scroll-related scripts loaded.");
-            initScrollAnimations();
-        }).catch(err => console.error("Failed to load scripts", err));
-    }, 7000); 
 
     // === Slider ===
     const totalSlides = 5;
