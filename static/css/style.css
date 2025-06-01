@@ -489,7 +489,7 @@
 /* ================================================= */
 /* Journal Table */
 .journal .preview {
-    position: absolute;
+    position: fixed;
     width: 250px;
     height: 250px;
     overflow: hidden;
@@ -507,15 +507,18 @@
     pointer-events: none;
 }
 .table-container {
-    height: 50vh;
+    height: 1000px;
     width: 87vw;
 
     display: flex;
-    justify-content: center ;
+    justify-content: center;
     align-items: center;
+
+    overflow: hidden;
 }
 .table-container .projects {
     background-color: var(--white);
+    padding: 100px;
 }
 .table-container p {
     font-size: 14px;

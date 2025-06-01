@@ -1,8 +1,6 @@
-const projects = document.querySelector(".projects")
-const preview = document.querySelector(".preview")
-const previewImg = document.querySelector(".preview-img")
-
-let isInside = false
+const projects = document.querySelector(".projects");
+const preview = document.querySelector(".preview");
+const previewImg = document.querySelector(".preview-img");
 
 const bgPosition = {
     p1: "0 0",
@@ -10,54 +8,58 @@ const bgPosition = {
     p3: "0 50%",
     p4: "0 75%",
     p5: "0 100%",
-}
+};
 
-const moveStuff = (e) => {
-    const mouseInside = isMouseInsideContainer(e)
+// Show preview on mouse enter
+// Show preview when mouse enters container
+projects.addEventListener("mouseenter", () => {
+    gsap.to(preview, { scale: 1, duration: 0.3 });
+});
 
-    if (mouseInside !== isInside) {
-        isInside = mouseInside
-        if (isInside) {
-            gsap.to(preview, .3, {
-                scale: 1,
-            })
-        } else {
-            gsap.to(preview, .3, {
-                scale: 0
-            })
-        }
-    }
-}
+// Hide preview when mouse leaves container
+projects.addEventListener("mouseleave", () => {
+    gsap.to(preview, { scale: 0, duration: 0.3 });
+});
 
-const moveProject = (e) => {
-    const previewRect = preview.getBoundingClientRect()
-    const offsetX = previewRect.width / 2
-    const offsetY = previewRect.height / 2
-
-    preview.style.left = e.pageX - offsetX + "px"
-    preview.style.top = e.pageY - offsetY + "px"
-}
-
-const moveProjectImg = (project) => {
-    const projectId = project.id
-    gsap.to(previewImg, .4, {
-        backgroundPosition: bgPosition[projectId] || "0 0"
-    })
-}
-
-const isMouseInsideContainer = (e) => {
-    const containerRect = projects.getBoundingClientRect()
-    return (
-        e.pageX >= containerRect.left &&
-        e.pageX <= containerRect.right &&
-        e.pageY >= containerRect.top &&
-        e.pageY <= containerRect.bottom
-    )
-}
-
-window.addEventListener("mousemove", moveStuff)
-
+// Move preview exactly to mouse position inside container
 Array.from(projects.children).forEach((project) => {
-    project.addEventListener("mousemove", moveProject)
-    project.addEventListener("mousemove", moveProjectImg.bind(null, project))
-})
+    project.addEventListener("mousemove", (e) => {
+        preview.style.left = e.clientX + "px";
+        preview.style.top = e.clientY + "px";
+
+        const projectId = project.id;
+        gsap.to(previewImg, {
+            backgroundPosition: bgPosition[projectId] || "0 0",
+            duration: 0.4,
+        });
+    });
+});
+
+// Move preview and update image when moving over each project
+Array.from(projects.children).forEach((project) => {
+    project.addEventListener("mousemove", (e) => {
+        const previewRect = preview.getBoundingClientRect();
+        const mouseX = e.clientX;
+        const mouseY = e.clientY;
+
+        // Clamp position so preview stays inside viewport
+        const clampedX = Math.min(
+            window.innerWidth - previewRect.width / 2,
+            Math.max(previewRect.width / 2, mouseX)
+        );
+        const clampedY = Math.min(
+            window.innerHeight - previewRect.height / 2,
+            Math.max(previewRect.height / 2, mouseY)
+        );
+
+        preview.style.left = clampedX - previewRect.width / 2 + "px";
+        preview.style.top = clampedY - previewRect.height / 2 + "px";
+
+        // Change background position based on project hovered
+        const projectId = project.id;
+        gsap.to(previewImg, {
+            backgroundPosition: bgPosition[projectId] || "0 0",
+            duration: 0.4,
+        });
+    });
+});
