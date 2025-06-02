@@ -3,10 +3,12 @@ let menuOpened = false
 function menuFunction() {
     const menu = document.querySelector(".menu-section")
     if (menuOpened === false) {
+      menu.style.display = "flex"
         menu.style.height = "100vh"
         menuOpened = !menuOpened
     } else {
         menu.style.height = "0vh"
+        menu.style.display = "none"
         menuOpened = !menuOpened
     }
 }

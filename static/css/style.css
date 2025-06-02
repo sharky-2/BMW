@@ -834,8 +834,13 @@
     overflow: hidden;
     background-color: var(--white);
 }
+#card-slider .copy h1 {
+    background-color: rgba(0, 0, 0, 0.405);
+    color: var(--white);
+    padding: 10px;
+}
 #card-slider .copy h1:nth-child(2) {
-    font-size: 1vw;
+    font-size: 2vw;
 }
 #card-slider .card img {
     position: absolute;
@@ -869,4 +874,122 @@
     width: 100%;
     height: 600px;
     border: none;
+}
+
+/* Adjustments for responsiveness and improvements */
+
+/* Responsive Typography */
+body {
+    font-size: clamp(14px, 1.5vw, 18px);
+}
+
+/* Ensure menu is mobile-friendly */
+@media (max-width: 768px) {
+    #menu {
+        flex-direction: column;
+        height: auto;
+        padding: 1em;
+    }
+
+    #menu .menu-section {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1em;
+
+        display: none;
+    }
+
+    #menu .menu-section .button,
+    #menu .menu-section .sub-button {
+        transform: translateX(0);
+        font-size: 1em;
+    }
+
+    #menu .menu-section .button:hover {
+        transform: none;
+    }
+
+    #menu .menu-section .button img {
+        height: 24px;
+        width: 24px;
+    }
+
+    #container-landing-page p {
+        font-size: 15vw;
+    }
+
+    #container-landing-page .sidebar-text {
+        font-size: 10vw;
+    }
+
+    #container-scroll-service .services {
+        padding: 4em 1em;
+    }
+
+    #container-scroll-service .services-header {
+        flex-direction: column;
+        gap: 2em;
+    }
+
+    #container-scroll-service .service {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #container-scroll-service .service.active {
+        height: auto;
+    }
+
+    #container-scroll-service .img {
+        width: 100%;
+        height: auto;
+    }
+
+    #slider-projects .slide-images {
+        width: 90%;
+        height: auto;
+    }
+
+    #image-gallery {
+        flex-direction: column;
+        height: auto;
+    }
+
+    #image-gallery {
+        flex-direction: row;
+        height: 500px;
+    }
+    #image-gallery .row {
+        width: 30%;
+        overflow-x: hidden;
+        flex-wrap: nowrap;
+    }
+
+
+    #accordion-list .item img {
+        height: auto;
+    }
+
+    #text-section h1 {
+        font-size: 2rem;
+    }
+
+    #text-section label {
+        font-size: 1rem;
+    }
+
+    #container-shuffel .item {
+        font-size: 2rem;
+        flex-direction: column;
+    }
+
+    #container-shuffel .img {
+        height: 60px;
+        width: auto;
+    }
+
+    #card-slider .card {
+        height: 300px;
+    }
 }
