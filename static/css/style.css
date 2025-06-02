@@ -786,6 +786,7 @@
     height: 80vh;
     overflow: hidden;
     background-color: var(--white);
+    margin-bottom: 100px;
 }
 #card-slider img {
     width: 100%;
@@ -819,7 +820,7 @@
 }
 #card-slider .card img {
     position: absolute;
-    opacity: .75;
+    opacity: 1;
 }
 #card-slider .copy {
     position: absolute;
