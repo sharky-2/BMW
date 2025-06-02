@@ -2,12 +2,12 @@ let currentIndex = 1;
 const totalSlides = 12;
 
 const imageSources = {
-  1: "/BMW-Fokus/static/images/bmw/jon-koop-khYVyHiNZo0-unsplash.jpg",     
-  2: "/BMW-Fokus/static/images/bmw/devon-janse-van-rensburg-yoqHLUayUTg-unsplash.jpg", 
-  3: "/BMW-Fokus/static/images/bmw/michael-jasmund-kR1u56bYces-unsplash.jpg", 
-  4: "/BMW-Fokus/static/images/bmw/denys-nevozhai-QD-8l-8_uJg-unsplash.jpg", 
-  5: "/BMW-Fokus/static/images/bmw/leon-seibert-1RiyAwNIiew-unsplash.jpg",    
-  6: "/BMW-Fokus/static/images/bmw/melody-p-PwcfmLRzJcI-unsplash.jpg",
+  1: "/BMW-Fokus/static/images/bmw/BMW Serija 3.jpg",     
+  2: "/BMW-Fokus/static/images/bmw/BMW X5.jpg", 
+  3: "/BMW-Fokus/static/images/bmw/BMW i8.jpg", 
+  4: "/BMW-Fokus/static/images/bmw/BMW Serija 7.jpg", 
+  5: "/BMW-Fokus/static/images/bmw/m4.jpg",    
+  6: "/BMW-Fokus/static/images/bmw/BMW Z4.jpg",
   7: "/BMW-Fokus/static/images/bmw/concept.jpg",
   8: "/BMW-Fokus/static/images/bmw/g20.jpg",    
   9: "/BMW-Fokus/static/images/bmw/i4.jpg",      

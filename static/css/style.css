@@ -284,6 +284,25 @@
     overflow: hidden;
 }
 
+#container-scroll-service .service {
+    height: 150px; 
+    transition: height 1s;
+    overflow: hidden;
+}
+
+#container-scroll-service .service.active {
+    height: 500px;
+}
+
+#container-scroll-service .service .img {
+    width: 30%; 
+    transition: width 0.3s ease;
+}
+
+#container-scroll-service .service.active .img {
+    width: 80%; 
+}
+
 /* ================================================= */
 /* Marquee */
 .spacer {

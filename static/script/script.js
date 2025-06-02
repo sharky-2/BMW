@@ -21,3 +21,16 @@ accordion_list.forEach((item) => {
         });
     });
 });
+
+// === Lenis Scroll ===
+document.addEventListener("DOMContentLoaded", () => {
+  const services = document.querySelectorAll("#container-scroll-service .service");
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      entry.target.classList.toggle("active", entry.isIntersecting);
+    });
+  }, { threshold: 0.1 });
+
+  services.forEach(service => observer.observe(service));
+});
