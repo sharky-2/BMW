@@ -3,7 +3,7 @@ const totalSlides = 12;
 
 const imageSources = {
   1: "/BMW-Fokus/static/images/bmw/BMW Serija 3.jpg",     
-  2: "/BMW-Fokus/static/images/bmw/BMW X5.jpg", 
+  2: "/BMW-Fokus/static/images/bmw/BMW X5.avif", 
   3: "/BMW-Fokus/static/images/bmw/BMW i8.jpg", 
   4: "/BMW-Fokus/static/images/bmw/BMW Serija 7.jpg", 
   5: "/BMW-Fokus/static/images/bmw/m4.jpg",    
