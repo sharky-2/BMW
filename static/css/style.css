@@ -11,6 +11,8 @@
     gap: 10px;
     flex: 1;
 
+    padding-inline: 75px;
+
     position: fixed;
     top: 0;
 
@@ -25,6 +27,11 @@
     img {
         width: 25px;
         cursor: pointer;
+    }
+
+    .logo-icon {
+        background: none;
+        margin-right: auto;
     }
 
     /* ===== dropdown ===== */
@@ -110,37 +117,45 @@
         display: flex;
         justify-content: center;
         align-items: center;
-    }
 
-    /* ===== center img ===== */
-    .wrapper-img {
-        position: absolute;
-        overflow: hidden;
-        margin: 0 auto;
-
-        width: 50%;
-        height: 100vh;
-    }
-
-    /* ===== img ===== */
-    img {
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    /* ===== box ===== */
-    .box {
-        background-color: var(--white);
-        opacity: 1;
+        /* ===== center img ===== */
+        .wrapper-img {
+            position: absolute;
+            overflow: hidden;
+            margin: 0 auto;
     
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 0;
+            width: 50%;
+            height: 100vh;
+
+            /* ===== box ===== */
+            .box {
+                background-color: var(--white);
+                opacity: 1;
+            
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                z-index: 0;
+            }
+
+            /* ===== image class ===== */
+            .image {
+
+                /* ===== img ===== */
+                img {
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+
+        
+        }
+    
     }
+
 
     /* ===== left/right side img ===== */
     .images {
