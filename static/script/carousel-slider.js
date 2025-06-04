@@ -3,17 +3,17 @@ const totalSlides = 12;
 
 const imageSources = {
   1: "BMW/static/images/bmw/BMW Serija 3.jpg",     
-  2: "BMWstatic/images/bmw/BMW X5.avif", 
-  3: "BMWstatic/images/bmw/BMW i8.jpg", 
-  4: "BMWstatic/images/bmw/BMW Serija 7.jpg", 
-  5: "BMWstatic/images/bmw/m4.jpg",    
-  6: "BMWstatic/images/bmw/BMW Z4.jpg",
-  7: "BMWstatic/images/bmw/concept.jpg",
-  8: "BMWstatic/images/bmw/g20.jpg",    
-  9: "BMWstatic/images/bmw/i4.jpg",      
-  10: "BMWstatic/images/bmw/ix.jpg",    
-  11: "BMWstatic/images/bmw/m3.jpg",     
-  12: "BMWstatic/images/bmw/m8.jpg" 
+  2: "BMW/static/images/bmw/BMW X5.avif", 
+  3: "BMW/static/images/bmw/BMW i8.jpg", 
+  4: "BMW/static/images/bmw/BMW Serija 7.jpg", 
+  5: "BMW/static/images/bmw/m4.jpg",    
+  6: "BMW/static/images/bmw/BMW Z4.jpg",
+  7: "BMW/static/images/bmw/concept.jpg",
+  8: "BMW/static/images/bmw/g20.jpg",    
+  9: "BMW/static/images/bmw/i4.jpg",      
+  10: "BMW/static/images/bmw/ix.jpg",    
+  11: "BMW/static/images/bmw/m3.jpg",     
+  12: "BMW/static/images/bmw/m8.jpg" 
 };
 
 const updateActiveSlide = () => {
