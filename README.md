@@ -7,10 +7,9 @@
 <img alt="repo-language-count" src="https://img.shields.io/github/languages/count/your-username/BMW?style=flat&color=0080ff" class="inline-block mx-1" style="margin: 0px 2px;">
 
 <p><em>Built with the tools and technologies:</em></p>
+<img alt="HTML5" src="https://img.shields.io/badge/HTML5-E34F26.svg?style=flat&logo=HTML5&logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
+<img alt="CSS3" src="https://img.shields.io/badge/CSS3-1572B6.svg?style=flat&logo=CSS3&logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
 <img alt="JavaScript" src="https://img.shields.io/badge/JavaScript-F7DF1E.svg?style=flat&logo=JavaScript&logoColor=black" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="React" src="https://img.shields.io/badge/React-61DAFB.svg?style=flat&logo=React&logoColor=black" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="Node.js" src="https://img.shields.io/badge/Node.js-339933.svg?style=flat&logo=nodedotjs&logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
-<img alt="npm" src="https://img.shields.io/badge/npm-CB3837.svg?style=flat&logo=npm&logoColor=white" class="inline-block mx-1" style="margin: 0px 2px;">
 </div>
 
 <br>
@@ -47,15 +46,14 @@
 
 <h2>Getting Started</h2>
 <h3>Prerequisites</h3>
-<p>This project requires the following dependencies:</p>
+<p>This project requires the following:</p>
 <ul class="list-disc pl-4 my-0">
-<li class="my-0"><strong>Programming Language:</strong> JavaScript</li>
-<li class="my-0"><strong>Package Manager:</strong> Npm</li>
-<li class="my-0"><strong>Node.js:</strong> Version 14.0.0 or higher</li>
+<li class="my-0"><strong>Web Browser:</strong> Any modern web browser (Chrome, Firefox, Safari, Edge)</li>
+<li class="my-0"><strong>Text Editor:</strong> Any code editor (VS Code, Sublime Text, etc.)</li>
 </ul>
 
 <h3>Installation</h3>
-<p>Build the project from source and install dependencies:</p>
+<p>Get started with the project:</p>
 <ol>
 <li class="my-0">
 <p><strong>Clone the repository:</strong></p>
@@ -65,12 +63,11 @@
 <p><strong>Navigate to the project directory:</strong></p>
 <pre><code class="language-sh">❯ cd BMW</code></pre>
 </li>
-<li class="my-0">
-<p><strong>Install the dependencies:</strong></p>
-<pre><code class="language-sh">❯ npm install</code></pre>
-</li>
 </ol>
 
 <h3>Usage</h3>
-<p>Run the project with:</p>
-<pre><code class="language-sh">❯ npm start</code></pre> 
+<p>To view the project:</p>
+<ol>
+<li class="my-0">Open the <code>index.html</code> file in your web browser</li>
+<li class="my-0">You can do this by double-clicking the file or dragging it into your browser window</li>
+</ol> 
